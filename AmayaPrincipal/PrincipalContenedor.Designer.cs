@@ -30,6 +30,7 @@ namespace AmayaPrincipal
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Imagen_Cerrar = new System.Windows.Forms.PictureBox();
             this.panelTema = new System.Windows.Forms.Panel();
@@ -41,7 +42,6 @@ namespace AmayaPrincipal
             this.btnHome = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
@@ -62,6 +62,18 @@ namespace AmayaPrincipal
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(369, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Amaya Shoes";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel2
             // 
@@ -152,7 +164,7 @@ namespace AmayaPrincipal
             this.btnCarrito.Name = "btnCarrito";
             this.btnCarrito.Size = new System.Drawing.Size(207, 36);
             this.btnCarrito.TabIndex = 20;
-            this.btnCarrito.Text = "Carrito de compras";
+            this.btnCarrito.Text = "Pedidos";
             this.btnCarrito.UseVisualStyleBackColor = false;
             this.btnCarrito.Click += new System.EventHandler(this.btnCarrito_Click);
             // 
@@ -215,18 +227,6 @@ namespace AmayaPrincipal
             this.btnPlay.TabIndex = 1;
             this.btnPlay.TabStop = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(369, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Amaya Shoes";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // PrincipalContenedor
             // 
