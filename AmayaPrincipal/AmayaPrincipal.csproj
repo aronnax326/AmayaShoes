@@ -173,5 +173,47 @@
       <Name>Capa_Entidad</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis 8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis71.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis 81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenis9.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
