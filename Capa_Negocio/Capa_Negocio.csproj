@@ -44,5 +44,15 @@
     <Compile Include="ClassNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">
+      <Project>{aeee8ef8-40dc-4041-8fa5-1492a8810311}</Project>
+      <Name>Capa_Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clase_Entidad\Capa_Entidad.csproj">
+      <Project>{f9ad8ec1-e17a-478a-ac66-da9d7f832943}</Project>
+      <Name>Capa_Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

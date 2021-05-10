@@ -153,6 +153,7 @@ namespace AmayaPrincipal
             this.txtContrasena.BackColor = System.Drawing.Color.Teal;
             this.txtContrasena.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContrasena.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasena.ForeColor = System.Drawing.Color.White;
             this.txtContrasena.Location = new System.Drawing.Point(163, 360);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(154, 22);
@@ -183,6 +184,7 @@ namespace AmayaPrincipal
             this.btnIngresar.TabIndex = 17;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
             // Inicial
             // 

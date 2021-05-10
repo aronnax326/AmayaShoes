@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace AmayaPrincipal
 {
-    public partial class Carrito : Form
+    public partial class Pedidos : Form
     {
-        public Carrito()
+        public Pedidos()
         {
             InitializeComponent();
         }
+
+        
     }
 }

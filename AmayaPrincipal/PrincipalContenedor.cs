@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Media;
+using Capa_Entidad;
 
 namespace AmayaPrincipal
 {
@@ -23,7 +24,6 @@ namespace AmayaPrincipal
         //Método que controla el evento click sobre el pictureBox con el icono cerrar
         private void Imagen_Cerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
             Application.Exit();
         }
 
@@ -96,7 +96,7 @@ namespace AmayaPrincipal
         //Botón que permite cambiar a la pantalla carrito
         private void btnCarrito_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Carrito());
+            AbrirFormulario(new Pedidos());
         }
 
         //Botón que permite cambiar a la pantalla eventos
