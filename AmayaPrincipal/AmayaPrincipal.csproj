@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carrito.cs">
+    <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Carrito.Designer.cs">
-      <DependentUpon>Carrito.cs</DependentUpon>
+    <Compile Include="Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Catalogo.cs">
       <SubType>Form</SubType>
@@ -94,8 +94,17 @@
     <EmbeddedResource Include="Catalogo.resx">
       <DependentUpon>Catalogo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Emergente.resx">
+      <DependentUpon>Emergente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrincipalContenedor.resx">
       <DependentUpon>PrincipalContenedor.cs</DependentUpon>
@@ -149,6 +158,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\detener1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa_Datos\Capa_Datos.csproj">
+      <Project>{aeee8ef8-40dc-4041-8fa5-1492a8810311}</Project>
+      <Name>Capa_Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Negocio\Capa_Negocio.csproj">
+      <Project>{9ded92e8-59c1-4d2c-b250-7ca434f5ecdf}</Project>
+      <Name>Capa_Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clase_Entidad\Capa_Entidad.csproj">
+      <Project>{f9ad8ec1-e17a-478a-ac66-da9d7f832943}</Project>
+      <Name>Capa_Entidad</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

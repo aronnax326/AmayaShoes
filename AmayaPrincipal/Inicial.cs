@@ -9,12 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Capa_Negocio;
+using Capa_Entidad;
+
 
 namespace AmayaPrincipal
 {
     public partial class Inicial : Form
     {
         bool val = false;
+        ClassEntidad_Login objeClientes = new ClassEntidad_Login();
+        ClassNegocio_Login objnClientes = new ClassNegocio_Login();
+        public static string nombre_usuario;
         public Inicial()
         {
             InitializeComponent();
@@ -22,56 +28,25 @@ namespace AmayaPrincipal
         //Método que controla la conexión con la base de datos para la conexión de usuarios.
         private void Logins()
         {
-            try
+            DataTable dt = new DataTable();
+            objeClientes.Usuario = txtUsuario.Text;
+            objeClientes.Contrasena = txtContrasena.Text;
+            dt = objnClientes.N_Cliente(objeClientes);
+            if (dt.Rows.Count > 0)
             {
-                //Cadena de conexion
-                string cnn = ConfigurationManager.ConnectionStrings["cnn"].ConnectionString;
-                //Declaramos la instancia de la conexion con la cadena
-                using (SqlConnection conexion = new SqlConnection(cnn))
-                {
-
-                    conexion.Open();
-
-                    using (SqlCommand cmd = new SqlCommand(
-                        cmdText: "SELECT Usuario, Contrasena FROM Usuarios Where Usuario = '" + txtUsuario.Text + " ' and Contrasena  = '" + txtContrasena.Text + "'",
-                        connection: conexion))
-                    {
-                        SqlDataReader dr = cmd.ExecuteReader();
-
-                        if (dr.Read())
-                        {
-                            Emergente bienvenido = new Emergente();
-                            bienvenido.Cambiar_Mensaje_Ingreso();
-                            bienvenido.Show();
-                            this.Hide();
-                        }
-                        else
-                        {
-
-                        }
-
-                    }
-                }
+                Emergente nueva = new Emergente();
+                nueva.Cambiar_Mensaje_Ingreso();
+                nueva.Show();
+                this.Hide();
             }
-            catch (Exception ex)
+            else
             {
-                txtUsuario.Text = "";
-                txtContrasena.Text = "";
-                txtUsuario.Focus();
-                Emergente bienvenido = new Emergente();
-                bienvenido.Cambiar_Mensaje_Corregir();
-                bienvenido.Show();
-                MessageBox.Show(Convert.ToString(ex));
+                Emergente nueva = new Emergente();
+                nueva.Cambiar_Mensaje_Corregir();
             }
         }
 
 
-        //método que controla el evento de click en el botón ingresar
-        private void btnIngresar_Click(object sender, EventArgs e)
-        {
-            Logins();
-
-        }
         //Método que controla el evencto de click sobre el botón salir
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
@@ -113,6 +88,11 @@ namespace AmayaPrincipal
         private void Inicial_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnIngresar_Click_1(object sender, EventArgs e)
+        {
+            Logins();
         }
     }
 }

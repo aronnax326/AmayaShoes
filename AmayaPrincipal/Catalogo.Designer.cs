@@ -30,6 +30,10 @@ namespace AmayaPrincipal
         private void InitializeComponent()
         {
             this.pnlCatalogo = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.picProducto4 = new System.Windows.Forms.PictureBox();
             this.lnkProducto4 = new System.Windows.Forms.LinkLabel();
@@ -39,11 +43,6 @@ namespace AmayaPrincipal
             this.lnkProducto2 = new System.Windows.Forms.LinkLabel();
             this.picProducto1 = new System.Windows.Forms.PictureBox();
             this.lnkProducto1 = new System.Windows.Forms.LinkLabel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.pnlCatalogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).BeginInit();
@@ -67,12 +66,51 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Controls.Add(this.lnkProducto2);
             this.pnlCatalogo.Controls.Add(this.picProducto1);
             this.pnlCatalogo.Controls.Add(this.lnkProducto1);
-            this.pnlCatalogo.Controls.Add(this.vScrollBar1);
             this.pnlCatalogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCatalogo.Location = new System.Drawing.Point(0, 0);
             this.pnlCatalogo.Name = "pnlCatalogo";
             this.pnlCatalogo.Size = new System.Drawing.Size(579, 596);
             this.pnlCatalogo.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(79, 872);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(62, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Referencia";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(79, 641);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 15);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Referencia";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(79, 422);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Referencia";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(82, 215);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Referencia";
             // 
             // label1
             // 
@@ -160,53 +198,6 @@ namespace AmayaPrincipal
             this.lnkProducto1.TabStop = true;
             this.lnkProducto1.Text = "Producto 1";
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(562, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 596);
-            this.vScrollBar1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(82, 215);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 15);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Referencia";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(79, 422);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Referencia";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(79, 641);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 15);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Referencia";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(79, 872);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Referencia";
-            // 
             // Catalogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -233,7 +224,6 @@ namespace AmayaPrincipal
         #endregion
 
         private System.Windows.Forms.Panel pnlCatalogo;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.PictureBox picProducto2;
         private System.Windows.Forms.LinkLabel lnkProducto2;
         private System.Windows.Forms.PictureBox picProducto1;

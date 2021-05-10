@@ -10,11 +10,25 @@ using Capa_Entidad;
 
 namespace Capa_Datos
 {
-    class ClassDatos_Login
-    {
+    public class ClassDatos_Login
+    { 
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
 
+            
+            public DataTable D_Cliente_Login(ClassEntidad_Login obje)
+            {
+                SqlCommand cmd = new SqlCommand("sp_logueo", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Usuario", obje.Usuario);
+                cmd.Parameters.AddWithValue("@Contrasena", obje.Contrasena);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
     }
-    class ClassDatos_Registro
+    
+    public class ClassDatos_Registro
     {
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
 

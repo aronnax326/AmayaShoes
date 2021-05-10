@@ -42,6 +42,7 @@ namespace AmayaPrincipal
             this.btnHome = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
@@ -228,6 +229,17 @@ namespace AmayaPrincipal
             this.btnPlay.TabStop = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(6, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 17);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Bienvenido ";
+            // 
             // PrincipalContenedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -235,6 +247,7 @@ namespace AmayaPrincipal
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(788, 617);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSalirPanel);
             this.Controls.Add(this.btnEventos);
             this.Controls.Add(this.btnCarrito);
@@ -276,5 +289,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Button btnEventos;
         private System.Windows.Forms.Button btnSalirPanel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

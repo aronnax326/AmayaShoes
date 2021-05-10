@@ -23,7 +23,7 @@ namespace AmayaPrincipal
         //datos incorrectos.
         public void Cambiar_Mensaje_Ingreso()
         {
-            txtMensaje.Text = "Login exitoso, bienvenido.";
+            lblTexto.Text = "Login exitoso, bienvenido.";
         }
 
         //Método que controla el mensaje mostrado.

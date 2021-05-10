@@ -21,5 +21,7 @@ namespace AmayaPrincipal
             lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
+
+
     }
 }

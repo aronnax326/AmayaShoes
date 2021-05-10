@@ -39,8 +39,8 @@ namespace AmayaPrincipal
             // txtTitulo
             // 
             this.txtTitulo.AutoSize = true;
-            this.txtTitulo.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtTitulo.Location = new System.Drawing.Point(268, 70);
+            this.txtTitulo.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold);
+            this.txtTitulo.Location = new System.Drawing.Point(206, 68);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(137, 30);
             this.txtTitulo.TabIndex = 0;
@@ -49,8 +49,8 @@ namespace AmayaPrincipal
             // lblHora
             // 
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Ebrima", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblHora.Location = new System.Drawing.Point(220, 189);
+            this.lblHora.Font = new System.Drawing.Font("Ebrima", 50F);
+            this.lblHora.Location = new System.Drawing.Point(152, 185);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(253, 89);
             this.lblHora.TabIndex = 1;
@@ -59,9 +59,9 @@ namespace AmayaPrincipal
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Ebrima", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFecha.Font = new System.Drawing.Font("Ebrima", 27.75F);
             this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
-            this.lblFecha.Location = new System.Drawing.Point(94, 264);
+            this.lblFecha.Location = new System.Drawing.Point(61, 263);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(120, 50);
             this.lblFecha.TabIndex = 2;
@@ -76,11 +76,11 @@ namespace AmayaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 688);
+            this.ClientSize = new System.Drawing.Size(579, 596);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.txtTitulo);
-            this.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Ebrima", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
