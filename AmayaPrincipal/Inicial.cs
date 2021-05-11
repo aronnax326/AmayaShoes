@@ -94,5 +94,12 @@ namespace AmayaPrincipal
         {
             Logins();
         }
+
+        private void lnkLblRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Registro nueva = new Registro();
+            nueva.Show();
+            
+        }
     }
 }

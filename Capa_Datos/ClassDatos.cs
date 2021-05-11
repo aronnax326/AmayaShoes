@@ -39,12 +39,11 @@ namespace Capa_Datos
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Usuario", obje.Usuario);
             cmd.Parameters.AddWithValue("@Contrasena", obje.Contrasena);
+            cmd.Parameters.AddWithValue("@Identificacion", obje.Identificacion);
             cmd.Parameters.AddWithValue("@Nombre", obje.Nombre);
             cmd.Parameters.AddWithValue("@Apellido", obje.Apellido);
-            cmd.Parameters.AddWithValue("@Edad", obje.Edad);
             cmd.Parameters.AddWithValue("@Telefono", obje.Telefono);
             cmd.Parameters.AddWithValue("@Direccion", obje.Direccion);
-            cmd.Parameters.AddWithValue("@Genero", obje.Genero);
             cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
             cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
             if (cn.State == ConnectionState.Open) cn.Close();

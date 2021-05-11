@@ -41,7 +41,7 @@ namespace AmayaPrincipal
             this.lblContrasena = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkLblRegistro = new System.Windows.Forms.LinkLabel();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -97,7 +97,7 @@ namespace AmayaPrincipal
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(132, 604);
+            this.btnSalir.Location = new System.Drawing.Point(136, 604);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(128, 40);
             this.btnSalir.TabIndex = 2;
@@ -160,16 +160,17 @@ namespace AmayaPrincipal
             this.txtContrasena.TabIndex = 13;
             this.txtContrasena.UseSystemPasswordChar = true;
             // 
-            // linkLabel1
+            // lnkLblRegistro
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(97, 428);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(220, 21);
-            this.linkLabel1.TabIndex = 14;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿No tienes usuario? Registrate";
+            this.lnkLblRegistro.AutoSize = true;
+            this.lnkLblRegistro.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkLblRegistro.Location = new System.Drawing.Point(97, 428);
+            this.lnkLblRegistro.Name = "lnkLblRegistro";
+            this.lnkLblRegistro.Size = new System.Drawing.Size(220, 21);
+            this.lnkLblRegistro.TabIndex = 14;
+            this.lnkLblRegistro.TabStop = true;
+            this.lnkLblRegistro.Text = "¿No tienes usuario? Registrate";
+            this.lnkLblRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLblRegistro_LinkClicked);
             // 
             // btnIngresar
             // 
@@ -193,7 +194,7 @@ namespace AmayaPrincipal
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(410, 700);
             this.Controls.Add(this.btnIngresar);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.lnkLblRegistro);
             this.Controls.Add(this.txtContrasena);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContrasena);
@@ -229,7 +230,7 @@ namespace AmayaPrincipal
         private Label lblContrasena;
         private TextBox txtUsuario;
         private TextBox txtContrasena;
-        private LinkLabel linkLabel1;
+        private LinkLabel lnkLblRegistro;
         private Button btnIngresar;
     }
 }

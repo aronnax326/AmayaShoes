@@ -16,11 +16,11 @@ namespace Capa_Entidad
     {
         public String Usuario { get; set; }
         public String Contrasena { get; set; }
+        public int  Identificacion { get; set; }
         public String Nombre { get; set; }
         public String Apellido { get; set; }
         public String Genero { get; set; }
         public String Direccion { get; set; }
-        public int Edad { get; set; }
         public int Telefono { get; set; }
         public String Accion { get; set; }
     }

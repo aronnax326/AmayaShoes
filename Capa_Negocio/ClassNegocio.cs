@@ -21,5 +21,10 @@ namespace Capa_Negocio
     }
     public class ClassNegocio_Registro
     {
+        ClassDatos_Registro objd = new ClassDatos_Registro();
+        public string N_Mantenimiento_Clientes(ClassEntidad_Registro obje)
+        {
+            return objd.D_Mantenimiento_Clientes(obje);
+        }
     }
 }
