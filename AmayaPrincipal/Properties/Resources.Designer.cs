@@ -73,6 +73,56 @@ namespace AmayaPrincipal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__154_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (154)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__155_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (155)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__156_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (156)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__157_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (157)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla__159_ {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla (159)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap catalogo {
             get {
                 object obj = ResourceManager.GetObject("catalogo", resourceCulture);
@@ -286,6 +336,16 @@ namespace AmayaPrincipal.Properties {
         internal static System.Drawing.Bitmap tenis9 {
             get {
                 object obj = ResourceManager.GetObject("tenis9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2021_05_11_at_11_32_26_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2021-05-11 at 11.32.26 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
