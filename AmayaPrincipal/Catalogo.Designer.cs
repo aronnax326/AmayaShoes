@@ -232,7 +232,7 @@ namespace AmayaPrincipal
             this.lblTenisNewBalance.Name = "lblTenisNewBalance";
             this.lblTenisNewBalance.Size = new System.Drawing.Size(37, 17);
             this.lblTenisNewBalance.TabIndex = 20;
-            this.lblTenisNewBalance.Text = "P006";
+            this.lblTenisNewBalance.Text = "P004";
             // 
             // linkTenisNewBalance
             // 
@@ -271,7 +271,7 @@ namespace AmayaPrincipal
             this.lblp004.Name = "lblp004";
             this.lblp004.Size = new System.Drawing.Size(37, 17);
             this.lblp004.TabIndex = 16;
-            this.lblp004.Text = "P004";
+            this.lblp004.Text = "P006";
             // 
             // lblp005
             // 
@@ -281,7 +281,7 @@ namespace AmayaPrincipal
             this.lblp005.Name = "lblp005";
             this.lblp005.Size = new System.Drawing.Size(37, 17);
             this.lblp005.TabIndex = 13;
-            this.lblp005.Text = "P005";
+            this.lblp005.Text = "P003";
             // 
             // lblp003
             // 
@@ -291,7 +291,7 @@ namespace AmayaPrincipal
             this.lblp003.Name = "lblp003";
             this.lblp003.Size = new System.Drawing.Size(37, 17);
             this.lblp003.TabIndex = 12;
-            this.lblp003.Text = "P003";
+            this.lblp003.Text = "P002";
             // 
             // lblp002
             // 
@@ -301,7 +301,7 @@ namespace AmayaPrincipal
             this.lblp002.Name = "lblp002";
             this.lblp002.Size = new System.Drawing.Size(37, 17);
             this.lblp002.TabIndex = 11;
-            this.lblp002.Text = "P002";
+            this.lblp002.Text = "P005";
             // 
             // lblp001
             // 
