@@ -17,17 +17,7 @@ namespace AmayaPrincipal
             InitializeComponent();
         }
 
-        private void Catalogo_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lnkTenisAdidas_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pnlCatalogo_Paint(object sender, PaintEventArgs e)
         {
 
         }
