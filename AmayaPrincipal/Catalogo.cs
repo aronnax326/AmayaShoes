@@ -17,5 +17,9 @@ namespace AmayaPrincipal
             InitializeComponent();
         }
 
+        private void pnlCatalogo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
