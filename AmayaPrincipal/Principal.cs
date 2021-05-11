@@ -22,6 +22,6 @@ namespace AmayaPrincipal
             lblFecha.Text = DateTime.Now.ToLongDateString();
         }
 
-
+        
     }
 }

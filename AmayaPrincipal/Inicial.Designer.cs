@@ -31,6 +31,7 @@ namespace AmayaPrincipal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicial));
             this.label1 = new System.Windows.Forms.Label();
             this.panelTitulo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -43,9 +44,11 @@ namespace AmayaPrincipal
             this.txtContrasena = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnIngresar = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,6 +61,7 @@ namespace AmayaPrincipal
             // panelTitulo
             // 
             this.panelTitulo.BackColor = System.Drawing.Color.Teal;
+            this.panelTitulo.Controls.Add(this.pictureBox3);
             this.panelTitulo.Controls.Add(this.pictureBox2);
             this.panelTitulo.Controls.Add(this.Titulo);
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
@@ -97,7 +101,7 @@ namespace AmayaPrincipal
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(132, 604);
+            this.btnSalir.Location = new System.Drawing.Point(136, 605);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(128, 40);
             this.btnSalir.TabIndex = 2;
@@ -186,6 +190,16 @@ namespace AmayaPrincipal
             this.btnIngresar.UseVisualStyleBackColor = false;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::AmayaPrincipal.Properties.Resources._1;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // Inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,6 +217,7 @@ namespace AmayaPrincipal
             this.Controls.Add(this.panelTitulo);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Inicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Inicial_Load);
@@ -210,6 +225,7 @@ namespace AmayaPrincipal
             this.panelTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +247,7 @@ namespace AmayaPrincipal
         private TextBox txtContrasena;
         private LinkLabel linkLabel1;
         private Button btnIngresar;
+        private PictureBox pictureBox3;
     }
 }
 

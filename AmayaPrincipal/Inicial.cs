@@ -26,7 +26,7 @@ namespace AmayaPrincipal
             InitializeComponent();
         }
         //Método que controla la conexión con la base de datos para la conexión de usuarios.
-        private void Logins()
+        public void Logins()
         {
             DataTable dt = new DataTable();
             objeClientes.Usuario = txtUsuario.Text;
