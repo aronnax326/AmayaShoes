@@ -50,12 +50,6 @@ namespace AmayaPrincipal
             this.txtTenisNewBalance = new System.Windows.Forms.Label();
             this.txtBotinMaicolJ = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.nProducto1 = new System.Windows.Forms.NumericUpDown();
-            this.nProducto2 = new System.Windows.Forms.NumericUpDown();
-            this.nProducto3 = new System.Windows.Forms.NumericUpDown();
-            this.nProducto4 = new System.Windows.Forms.NumericUpDown();
-            this.nProducto5 = new System.Windows.Forms.NumericUpDown();
-            this.nProducto6 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -65,24 +59,18 @@ namespace AmayaPrincipal
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnlCatalogo = new System.Windows.Forms.Panel();
-            this.btnPedido6 = new System.Windows.Forms.Button();
-            this.btnPedido5 = new System.Windows.Forms.Button();
-            this.btnPedido4 = new System.Windows.Forms.Button();
-            this.btnPedido3 = new System.Windows.Forms.Button();
-            this.btnPedido2 = new System.Windows.Forms.Button();
-            this.btnPedido = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -155,7 +143,7 @@ namespace AmayaPrincipal
             // 
             this.lblp002.AutoSize = true;
             this.lblp002.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp002.Location = new System.Drawing.Point(76, 1322);
+            this.lblp002.Location = new System.Drawing.Point(111, 1313);
             this.lblp002.Name = "lblp002";
             this.lblp002.Size = new System.Drawing.Size(37, 17);
             this.lblp002.TabIndex = 11;
@@ -165,7 +153,7 @@ namespace AmayaPrincipal
             // 
             this.lblp003.AutoSize = true;
             this.lblp003.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp003.Location = new System.Drawing.Point(77, 575);
+            this.lblp003.Location = new System.Drawing.Point(111, 560);
             this.lblp003.Name = "lblp003";
             this.lblp003.Size = new System.Drawing.Size(37, 17);
             this.lblp003.TabIndex = 12;
@@ -175,7 +163,7 @@ namespace AmayaPrincipal
             // 
             this.lblp005.AutoSize = true;
             this.lblp005.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp005.Location = new System.Drawing.Point(77, 815);
+            this.lblp005.Location = new System.Drawing.Point(111, 805);
             this.lblp005.Name = "lblp005";
             this.lblp005.Size = new System.Drawing.Size(37, 17);
             this.lblp005.TabIndex = 13;
@@ -185,7 +173,7 @@ namespace AmayaPrincipal
             // 
             this.lblp004.AutoSize = true;
             this.lblp004.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp004.Location = new System.Drawing.Point(76, 1586);
+            this.lblp004.Location = new System.Drawing.Point(111, 1576);
             this.lblp004.Name = "lblp004";
             this.lblp004.Size = new System.Drawing.Size(37, 17);
             this.lblp004.TabIndex = 16;
@@ -224,7 +212,7 @@ namespace AmayaPrincipal
             // 
             this.lblTenisNewBalance.AutoSize = true;
             this.lblTenisNewBalance.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenisNewBalance.Location = new System.Drawing.Point(89, 1061);
+            this.lblTenisNewBalance.Location = new System.Drawing.Point(111, 1054);
             this.lblTenisNewBalance.Name = "lblTenisNewBalance";
             this.lblTenisNewBalance.Size = new System.Drawing.Size(37, 17);
             this.lblTenisNewBalance.TabIndex = 20;
@@ -234,7 +222,7 @@ namespace AmayaPrincipal
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 306);
+            this.label2.Location = new System.Drawing.Point(129, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 21;
@@ -300,48 +288,6 @@ namespace AmayaPrincipal
             this.label3.TabIndex = 27;
             this.label3.Tag = "";
             this.label3.Text = "Bota Grua";
-            // 
-            // nProducto1
-            // 
-            this.nProducto1.Location = new System.Drawing.Point(154, 303);
-            this.nProducto1.Name = "nProducto1";
-            this.nProducto1.Size = new System.Drawing.Size(69, 20);
-            this.nProducto1.TabIndex = 28;
-            // 
-            // nProducto2
-            // 
-            this.nProducto2.Location = new System.Drawing.Point(136, 572);
-            this.nProducto2.Name = "nProducto2";
-            this.nProducto2.Size = new System.Drawing.Size(69, 20);
-            this.nProducto2.TabIndex = 29;
-            // 
-            // nProducto3
-            // 
-            this.nProducto3.Location = new System.Drawing.Point(145, 815);
-            this.nProducto3.Name = "nProducto3";
-            this.nProducto3.Size = new System.Drawing.Size(69, 20);
-            this.nProducto3.TabIndex = 30;
-            // 
-            // nProducto4
-            // 
-            this.nProducto4.Location = new System.Drawing.Point(155, 1058);
-            this.nProducto4.Name = "nProducto4";
-            this.nProducto4.Size = new System.Drawing.Size(69, 20);
-            this.nProducto4.TabIndex = 31;
-            // 
-            // nProducto5
-            // 
-            this.nProducto5.Location = new System.Drawing.Point(141, 1319);
-            this.nProducto5.Name = "nProducto5";
-            this.nProducto5.Size = new System.Drawing.Size(69, 20);
-            this.nProducto5.TabIndex = 32;
-            // 
-            // nProducto6
-            // 
-            this.nProducto6.Location = new System.Drawing.Point(141, 1583);
-            this.nProducto6.Name = "nProducto6";
-            this.nProducto6.Size = new System.Drawing.Size(69, 20);
-            this.nProducto6.TabIndex = 33;
             // 
             // label4
             // 
@@ -425,12 +371,12 @@ namespace AmayaPrincipal
             // 
             this.pnlCatalogo.AutoScroll = true;
             this.pnlCatalogo.BackColor = System.Drawing.Color.White;
-            this.pnlCatalogo.Controls.Add(this.btnPedido6);
-            this.pnlCatalogo.Controls.Add(this.btnPedido5);
-            this.pnlCatalogo.Controls.Add(this.btnPedido4);
-            this.pnlCatalogo.Controls.Add(this.btnPedido3);
-            this.pnlCatalogo.Controls.Add(this.btnPedido2);
-            this.pnlCatalogo.Controls.Add(this.btnPedido);
+            this.pnlCatalogo.Controls.Add(this.label11);
+            this.pnlCatalogo.Controls.Add(this.label10);
+            this.pnlCatalogo.Controls.Add(this.label9);
+            this.pnlCatalogo.Controls.Add(this.label8);
+            this.pnlCatalogo.Controls.Add(this.label7);
+            this.pnlCatalogo.Controls.Add(this.label6);
             this.pnlCatalogo.Controls.Add(this.pictureBox8);
             this.pnlCatalogo.Controls.Add(this.pictureBox7);
             this.pnlCatalogo.Controls.Add(this.pictureBox6);
@@ -439,12 +385,6 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Controls.Add(this.pictureBox3);
             this.pnlCatalogo.Controls.Add(this.label5);
             this.pnlCatalogo.Controls.Add(this.label4);
-            this.pnlCatalogo.Controls.Add(this.nProducto6);
-            this.pnlCatalogo.Controls.Add(this.nProducto5);
-            this.pnlCatalogo.Controls.Add(this.nProducto4);
-            this.pnlCatalogo.Controls.Add(this.nProducto3);
-            this.pnlCatalogo.Controls.Add(this.nProducto2);
-            this.pnlCatalogo.Controls.Add(this.nProducto1);
             this.pnlCatalogo.Controls.Add(this.label3);
             this.pnlCatalogo.Controls.Add(this.txtBotinMaicolJ);
             this.pnlCatalogo.Controls.Add(this.txtTenisNewBalance);
@@ -471,92 +411,66 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Name = "pnlCatalogo";
             this.pnlCatalogo.Size = new System.Drawing.Size(579, 596);
             this.pnlCatalogo.TabIndex = 7;
-            
             // 
-            // btnPedido6
+            // label6
             // 
-            this.btnPedido6.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido6.FlatAppearance.BorderSize = 0;
-            this.btnPedido6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido6.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido6.ForeColor = System.Drawing.Color.White;
-            this.btnPedido6.Location = new System.Drawing.Point(321, 1546);
-            this.btnPedido6.Name = "btnPedido6";
-            this.btnPedido6.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido6.TabIndex = 48;
-            this.btnPedido6.Text = "Pedir";
-            this.btnPedido6.UseVisualStyleBackColor = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(285, 266);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(246, 32);
+            this.label6.TabIndex = 43;
+            this.label6.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
             // 
-            // btnPedido5
+            // label7
             // 
-            this.btnPedido5.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido5.FlatAppearance.BorderSize = 0;
-            this.btnPedido5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido5.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido5.ForeColor = System.Drawing.Color.White;
-            this.btnPedido5.Location = new System.Drawing.Point(321, 1273);
-            this.btnPedido5.Name = "btnPedido5";
-            this.btnPedido5.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido5.TabIndex = 47;
-            this.btnPedido5.Text = "Pedir";
-            this.btnPedido5.UseVisualStyleBackColor = false;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(285, 533);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(246, 32);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
             // 
-            // btnPedido4
+            // label8
             // 
-            this.btnPedido4.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido4.FlatAppearance.BorderSize = 0;
-            this.btnPedido4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido4.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido4.ForeColor = System.Drawing.Color.White;
-            this.btnPedido4.Location = new System.Drawing.Point(321, 1005);
-            this.btnPedido4.Name = "btnPedido4";
-            this.btnPedido4.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido4.TabIndex = 46;
-            this.btnPedido4.Text = "Pedir";
-            this.btnPedido4.UseVisualStyleBackColor = false;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(285, 776);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(246, 32);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
             // 
-            // btnPedido3
+            // label9
             // 
-            this.btnPedido3.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido3.FlatAppearance.BorderSize = 0;
-            this.btnPedido3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido3.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido3.ForeColor = System.Drawing.Color.White;
-            this.btnPedido3.Location = new System.Drawing.Point(321, 776);
-            this.btnPedido3.Name = "btnPedido3";
-            this.btnPedido3.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido3.TabIndex = 45;
-            this.btnPedido3.Text = "Pedir";
-            this.btnPedido3.UseVisualStyleBackColor = false;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(285, 1017);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(246, 32);
+            this.label9.TabIndex = 46;
+            this.label9.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
             // 
-            // btnPedido2
+            // label10
             // 
-            this.btnPedido2.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido2.FlatAppearance.BorderSize = 0;
-            this.btnPedido2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido2.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido2.ForeColor = System.Drawing.Color.White;
-            this.btnPedido2.Location = new System.Drawing.Point(321, 533);
-            this.btnPedido2.Name = "btnPedido2";
-            this.btnPedido2.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido2.TabIndex = 44;
-            this.btnPedido2.Text = "Pedir";
-            this.btnPedido2.UseVisualStyleBackColor = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(291, 1298);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(246, 32);
+            this.label10.TabIndex = 47;
+            this.label10.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
             // 
-            // btnPedido
+            // label11
             // 
-            this.btnPedido.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido.FlatAppearance.BorderSize = 0;
-            this.btnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido.ForeColor = System.Drawing.Color.White;
-            this.btnPedido.Location = new System.Drawing.Point(321, 265);
-            this.btnPedido.Name = "btnPedido";
-            this.btnPedido.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido.TabIndex = 43;
-            this.btnPedido.Text = "Pedir";
-            this.btnPedido.UseVisualStyleBackColor = false;
-            this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(291, 1561);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(246, 32);
+            this.label11.TabIndex = 48;
+            this.label11.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
             // 
             // Catalogo
             // 
@@ -576,12 +490,6 @@ namespace AmayaPrincipal
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -617,12 +525,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label txtTenisNewBalance;
         private System.Windows.Forms.Label txtBotinMaicolJ;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown nProducto1;
-        private System.Windows.Forms.NumericUpDown nProducto2;
-        private System.Windows.Forms.NumericUpDown nProducto3;
-        private System.Windows.Forms.NumericUpDown nProducto4;
-        private System.Windows.Forms.NumericUpDown nProducto5;
-        private System.Windows.Forms.NumericUpDown nProducto6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -632,11 +534,11 @@ namespace AmayaPrincipal
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel pnlCatalogo;
-        private System.Windows.Forms.Button btnPedido;
-        private System.Windows.Forms.Button btnPedido5;
-        private System.Windows.Forms.Button btnPedido4;
-        private System.Windows.Forms.Button btnPedido3;
-        private System.Windows.Forms.Button btnPedido2;
-        private System.Windows.Forms.Button btnPedido6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
