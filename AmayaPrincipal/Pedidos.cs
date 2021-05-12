@@ -17,6 +17,9 @@ namespace AmayaPrincipal
             InitializeComponent();
         }
 
-        
+        private void labFecha_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
