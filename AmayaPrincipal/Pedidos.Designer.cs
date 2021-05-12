@@ -32,12 +32,12 @@ namespace AmayaPrincipal
             this.lblCarrito1 = new System.Windows.Forms.Label();
             this.lblCarrito2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewPedido = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCarrito1
@@ -63,7 +63,7 @@ namespace AmayaPrincipal
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.dataGridViewPedido);
             this.groupBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(39, 173);
             this.groupBox1.Name = "groupBox1";
@@ -72,13 +72,13 @@ namespace AmayaPrincipal
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
             // 
-            // dataGridView1
+            // dataGridViewPedido
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(43, 38);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(414, 150);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedido.Location = new System.Drawing.Point(43, 38);
+            this.dataGridViewPedido.Name = "dataGridViewPedido";
+            this.dataGridViewPedido.Size = new System.Drawing.Size(414, 150);
+            this.dataGridViewPedido.TabIndex = 0;
             // 
             // label1
             // 
@@ -124,7 +124,7 @@ namespace AmayaPrincipal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carrito";
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,7 +135,7 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label lblCarrito1;
         private System.Windows.Forms.Label lblCarrito2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewPedido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;

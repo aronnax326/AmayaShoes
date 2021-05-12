@@ -50,7 +50,6 @@ namespace AmayaPrincipal
             this.txtTenisNewBalance = new System.Windows.Forms.Label();
             this.txtBotinMaicolJ = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.nProducto1 = new System.Windows.Forms.NumericUpDown();
             this.nProducto2 = new System.Windows.Forms.NumericUpDown();
             this.nProducto3 = new System.Windows.Forms.NumericUpDown();
             this.nProducto4 = new System.Windows.Forms.NumericUpDown();
@@ -65,19 +64,18 @@ namespace AmayaPrincipal
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pnlCatalogo = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnPedido6 = new System.Windows.Forms.Button();
             this.btnPedido5 = new System.Windows.Forms.Button();
             this.btnPedido4 = new System.Windows.Forms.Button();
             this.btnPedido3 = new System.Windows.Forms.Button();
             this.btnPedido2 = new System.Windows.Forms.Button();
-            this.btnPedido = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nProducto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nProducto3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nProducto4)).BeginInit();
@@ -234,7 +232,7 @@ namespace AmayaPrincipal
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(95, 306);
+            this.label2.Location = new System.Drawing.Point(113, 305);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 21;
@@ -244,7 +242,7 @@ namespace AmayaPrincipal
             // 
             this.txtTenisAdidas.AutoSize = true;
             this.txtTenisAdidas.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenisAdidas.Location = new System.Drawing.Point(111, 265);
+            this.txtTenisAdidas.Location = new System.Drawing.Point(95, 263);
             this.txtTenisAdidas.Name = "txtTenisAdidas";
             this.txtTenisAdidas.Size = new System.Drawing.Size(87, 17);
             this.txtTenisAdidas.TabIndex = 22;
@@ -300,13 +298,6 @@ namespace AmayaPrincipal
             this.label3.TabIndex = 27;
             this.label3.Tag = "";
             this.label3.Text = "Bota Grua";
-            // 
-            // nProducto1
-            // 
-            this.nProducto1.Location = new System.Drawing.Point(154, 303);
-            this.nProducto1.Name = "nProducto1";
-            this.nProducto1.Size = new System.Drawing.Size(69, 20);
-            this.nProducto1.TabIndex = 28;
             // 
             // nProducto2
             // 
@@ -425,12 +416,12 @@ namespace AmayaPrincipal
             // 
             this.pnlCatalogo.AutoScroll = true;
             this.pnlCatalogo.BackColor = System.Drawing.Color.White;
+            this.pnlCatalogo.Controls.Add(this.label6);
             this.pnlCatalogo.Controls.Add(this.btnPedido6);
             this.pnlCatalogo.Controls.Add(this.btnPedido5);
             this.pnlCatalogo.Controls.Add(this.btnPedido4);
             this.pnlCatalogo.Controls.Add(this.btnPedido3);
             this.pnlCatalogo.Controls.Add(this.btnPedido2);
-            this.pnlCatalogo.Controls.Add(this.btnPedido);
             this.pnlCatalogo.Controls.Add(this.pictureBox8);
             this.pnlCatalogo.Controls.Add(this.pictureBox7);
             this.pnlCatalogo.Controls.Add(this.pictureBox6);
@@ -444,7 +435,6 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Controls.Add(this.nProducto4);
             this.pnlCatalogo.Controls.Add(this.nProducto3);
             this.pnlCatalogo.Controls.Add(this.nProducto2);
-            this.pnlCatalogo.Controls.Add(this.nProducto1);
             this.pnlCatalogo.Controls.Add(this.label3);
             this.pnlCatalogo.Controls.Add(this.txtBotinMaicolJ);
             this.pnlCatalogo.Controls.Add(this.txtTenisNewBalance);
@@ -472,6 +462,16 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Size = new System.Drawing.Size(579, 596);
             this.pnlCatalogo.TabIndex = 7;
             
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(285, 263);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(237, 34);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Para realizar tu pedido copia el código\r\nde producto en la sección de pedidos.\r\n";
             // 
             // btnPedido6
             // 
@@ -543,21 +543,6 @@ namespace AmayaPrincipal
             this.btnPedido2.Text = "Pedir";
             this.btnPedido2.UseVisualStyleBackColor = false;
             // 
-            // btnPedido
-            // 
-            this.btnPedido.BackColor = System.Drawing.Color.Teal;
-            this.btnPedido.FlatAppearance.BorderSize = 0;
-            this.btnPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPedido.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido.ForeColor = System.Drawing.Color.White;
-            this.btnPedido.Location = new System.Drawing.Point(321, 265);
-            this.btnPedido.Name = "btnPedido";
-            this.btnPedido.Size = new System.Drawing.Size(108, 28);
-            this.btnPedido.TabIndex = 43;
-            this.btnPedido.Text = "Pedir";
-            this.btnPedido.UseVisualStyleBackColor = false;
-            this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
-            // 
             // Catalogo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -576,7 +561,6 @@ namespace AmayaPrincipal
             ((System.ComponentModel.ISupportInitialize)(this.picProducto4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nProducto1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nProducto2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nProducto3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nProducto4)).EndInit();
@@ -617,7 +601,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label txtTenisNewBalance;
         private System.Windows.Forms.Label txtBotinMaicolJ;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown nProducto1;
         private System.Windows.Forms.NumericUpDown nProducto2;
         private System.Windows.Forms.NumericUpDown nProducto3;
         private System.Windows.Forms.NumericUpDown nProducto4;
@@ -632,11 +615,11 @@ namespace AmayaPrincipal
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel pnlCatalogo;
-        private System.Windows.Forms.Button btnPedido;
         private System.Windows.Forms.Button btnPedido5;
         private System.Windows.Forms.Button btnPedido4;
         private System.Windows.Forms.Button btnPedido3;
         private System.Windows.Forms.Button btnPedido2;
         private System.Windows.Forms.Button btnPedido6;
+        private System.Windows.Forms.Label label6;
     }
 }
