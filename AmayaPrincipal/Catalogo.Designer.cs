@@ -61,10 +61,6 @@ namespace AmayaPrincipal
             this.pnlCatalogo = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnPedido5 = new System.Windows.Forms.Button();
-            this.btnPedido4 = new System.Windows.Forms.Button();
-            this.btnPedido3 = new System.Windows.Forms.Button();
-            this.btnPedido2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).BeginInit();
@@ -375,10 +371,6 @@ namespace AmayaPrincipal
             this.pnlCatalogo.BackColor = System.Drawing.Color.White;
             this.pnlCatalogo.Controls.Add(this.label7);
             this.pnlCatalogo.Controls.Add(this.label6);
-            this.pnlCatalogo.Controls.Add(this.btnPedido5);
-            this.pnlCatalogo.Controls.Add(this.btnPedido4);
-            this.pnlCatalogo.Controls.Add(this.btnPedido3);
-            this.pnlCatalogo.Controls.Add(this.btnPedido2);
             this.pnlCatalogo.Controls.Add(this.pictureBox8);
             this.pnlCatalogo.Controls.Add(this.pictureBox7);
             this.pnlCatalogo.Controls.Add(this.pictureBox6);
@@ -433,34 +425,6 @@ namespace AmayaPrincipal
             this.label6.Size = new System.Drawing.Size(246, 32);
             this.label6.TabIndex = 48;
             this.label6.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
-            // 
-            // btnPedido5
-            // 
-            this.btnPedido5.Location = new System.Drawing.Point(0, 0);
-            this.btnPedido5.Name = "btnPedido5";
-            this.btnPedido5.Size = new System.Drawing.Size(75, 23);
-            this.btnPedido5.TabIndex = 1;
-            // 
-            // btnPedido4
-            // 
-            this.btnPedido4.Location = new System.Drawing.Point(0, 0);
-            this.btnPedido4.Name = "btnPedido4";
-            this.btnPedido4.Size = new System.Drawing.Size(75, 23);
-            this.btnPedido4.TabIndex = 2;
-            // 
-            // btnPedido3
-            // 
-            this.btnPedido3.Location = new System.Drawing.Point(0, 0);
-            this.btnPedido3.Name = "btnPedido3";
-            this.btnPedido3.Size = new System.Drawing.Size(75, 23);
-            this.btnPedido3.TabIndex = 3;
-            // 
-            // btnPedido2
-            // 
-            this.btnPedido2.Location = new System.Drawing.Point(0, 0);
-            this.btnPedido2.Name = "btnPedido2";
-            this.btnPedido2.Size = new System.Drawing.Size(75, 23);
-            this.btnPedido2.TabIndex = 4;
             // 
             // Catalogo
             // 
@@ -524,10 +488,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Panel pnlCatalogo;
-        private System.Windows.Forms.Button btnPedido5;
-        private System.Windows.Forms.Button btnPedido4;
-        private System.Windows.Forms.Button btnPedido3;
-        private System.Windows.Forms.Button btnPedido2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
     }
