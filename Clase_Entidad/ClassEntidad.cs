@@ -24,4 +24,11 @@ namespace Capa_Entidad
         public int Telefono { get; set; }
         public String Accion { get; set; }
     }
+
+    public class ClassEntidad_Producto
+    {
+        public String Nombre_Producto { get; set; }
+        public int Cantidad { get; set }
+        public String Accion { get; set; }
+    }
 }

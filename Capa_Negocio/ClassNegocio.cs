@@ -27,4 +27,18 @@ namespace Capa_Negocio
             return objd.D_Mantenimiento_Clientes(obje);
         }
     }
+
+    public class ClassNegocio_Producto
+    {
+        ClassDatos_Producto objd = new ClassDatos_Producto();
+        public DataTable N_Buscar_Producto(ClassEntidad_Producto obje)
+        {
+            return objd.D_Buscar_Producto(obje);
+        }
+
+        public string N_Mantenimiento_Producto(ClassEntidad_Producto obje)
+        {
+            return objd.D_Mantenimiento_Producto(obje);
+        }
+    }
 }

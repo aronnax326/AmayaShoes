@@ -54,5 +54,36 @@ namespace Capa_Datos
             return accion;
         }
     }
-        
+     
+    public class ClassDatos_Producto
+    {
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+        public DataTable D_Buscar_Producto(ClassEntidad_Producto obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_Buscar_Producto", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Nombre_Producto", obje.Nombre_Producto);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public string D_Mantenimiento_Producto(ClassEntidad_Producto obje)
+        {
+            string accion = "";
+            SqlCommand cmd = new SqlCommand("sp_Actualizar_Producto", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Nombre", obje.Nombre_Producto);
+            cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
+            cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
+            cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            accion = cmd.Parameters["@Accion"].Value.ToString();
+            cn.Close();
+            return accion;
+        }
+    }
 }
