@@ -69,11 +69,11 @@ namespace AmayaPrincipal
             // lblCarrito1
             // 
             this.lblCarrito1.AutoSize = true;
-            this.lblCarrito1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblCarrito1.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCarrito1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblCarrito1.Location = new System.Drawing.Point(245, 22);
             this.lblCarrito1.Name = "lblCarrito1";
-            this.lblCarrito1.Size = new System.Drawing.Size(90, 30);
+            this.lblCarrito1.Size = new System.Drawing.Size(91, 30);
             this.lblCarrito1.TabIndex = 0;
             this.lblCarrito1.Text = "Pedidos";
             // 
