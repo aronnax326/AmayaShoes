@@ -61,9 +61,6 @@ namespace AmayaPrincipal
             this.textNombreProducto = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCarrito1
@@ -89,15 +86,6 @@ namespace AmayaPrincipal
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.textNombreProducto);
-            this.groupBox1.Controls.Add(this.lblNombreProducto);
-            this.groupBox1.Controls.Add(this.ButtAgregar);
-            this.groupBox1.Controls.Add(this.textCantidad);
-            this.groupBox1.Controls.Add(this.textReferencia);
-            this.groupBox1.Controls.Add(this.lblCantidad);
-            this.groupBox1.Controls.Add(this.lblReferencia);
-            this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 265);
@@ -107,62 +95,12 @@ namespace AmayaPrincipal
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
             // 
-            // ButtAgregar
-            // 
-            this.ButtAgregar.Image = global::AmayaPrincipal.Properties.Resources.shopping_cart;
-            this.ButtAgregar.Location = new System.Drawing.Point(404, 38);
-            this.ButtAgregar.Name = "ButtAgregar";
-            this.ButtAgregar.Size = new System.Drawing.Size(66, 41);
-            this.ButtAgregar.TabIndex = 6;
-            this.ButtAgregar.UseVisualStyleBackColor = true;
-            // 
-            // textCantidad
-            // 
-            this.textCantidad.Location = new System.Drawing.Point(255, 51);
-            this.textCantidad.Name = "textCantidad";
-            this.textCantidad.Size = new System.Drawing.Size(66, 24);
-            this.textCantidad.TabIndex = 5;
-            // 
-            // textReferencia
-            // 
-            this.textReferencia.Location = new System.Drawing.Point(89, 51);
-            this.textReferencia.Name = "textReferencia";
-            this.textReferencia.Size = new System.Drawing.Size(63, 24);
-            this.textReferencia.TabIndex = 4;
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(182, 58);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(67, 17);
-            this.lblCantidad.TabIndex = 3;
-            this.lblCantidad.Text = "Cantidad:";
-            // 
-            // lblReferencia
-            // 
-            this.lblReferencia.AutoSize = true;
-            this.lblReferencia.Location = new System.Drawing.Point(7, 58);
-            this.lblReferencia.Name = "lblReferencia";
-            this.lblReferencia.Size = new System.Drawing.Size(76, 17);
-            this.lblReferencia.TabIndex = 2;
-            this.lblReferencia.Text = "Referencia:";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel3.Location = new System.Drawing.Point(-6, -44);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(561, 22);
-            this.panel3.TabIndex = 1;
-            // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkSlateGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(43, 38);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(549, 108);
+            this.dataGridView1.Size = new System.Drawing.Size(414, 150);
             this.dataGridView1.TabIndex = 0;
             // 
             // label1
@@ -369,14 +307,7 @@ namespace AmayaPrincipal
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carrito";
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -387,7 +318,7 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label lblCarrito1;
         private System.Windows.Forms.Label lblPedidoNumero;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewPedido;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;

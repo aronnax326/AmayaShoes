@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Capa_Entidad;
-using Capa_Negocio;
 
 namespace AmayaPrincipal
 {
-    public partial class Catalogo : Form
+    public partial class PrincipalAministrador : Form
     {
-        
-        public Catalogo()
+        public PrincipalAministrador()
         {
             InitializeComponent();
         }
-
-        
     }
 }
-
