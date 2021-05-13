@@ -12,6 +12,14 @@ namespace Capa_Entidad
         public String Contrasena { get; set; }
     }
 
+    public class ClassEntidad_Clientes
+    {
+        public int Identificacion { get; set; }
+        public String Nombre { get; set; }
+        public String Apellido { get; set; }
+        public String Direccion { get; set; }
+        public int Telefono { get; set; }
+    }
     public class ClassEntidad_Registro
     {
         public String Usuario { get; set; }
@@ -19,7 +27,6 @@ namespace Capa_Entidad
         public int  Identificacion { get; set; }
         public String Nombre { get; set; }
         public String Apellido { get; set; }
-        public String Genero { get; set; }
         public String Direccion { get; set; }
         public int Telefono { get; set; }
         public String Accion { get; set; }
@@ -31,6 +38,25 @@ namespace Capa_Entidad
         public int Cantidad { get; set; }
         public String Codigo { get; set; }
 
+        public String Accion { get; set; }
+    }
+
+    public class ClassEntidad_Pedido
+    {
+        public int Numero_Pedido { get; set; }
+        public int Identificacion { get; set; }
+        public String Nombre_Producto { get; set; }
+        public int Cantidad { get; set; }
+        public DateTime Fecha { get; set; }
+        public String Accion { get; set; }
+    }
+
+    public class ClassEntidad_Detalle
+    {
+        public int Numero_Pedido { get; set; }
+        public String Codigo { get; set; }
+        public int Cantidad { get; set; }
+        public String Guia { get; set; }
         public String Accion { get; set; }
     }
 }

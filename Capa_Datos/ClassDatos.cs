@@ -26,6 +26,22 @@ namespace Capa_Datos
                 da.Fill(dt);
                 return dt;
             }
+
+    }
+
+    public class ClassDatos_Clientes
+    {
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+        public DataTable D_Buscar_Clientes(ClassEntidad_Clientes obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_Buscar_Clientes", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Identificacion", obje.Identificacion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
     
     public class ClassDatos_Registro
@@ -60,9 +76,9 @@ namespace Capa_Datos
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
         public DataTable D_Buscar_Producto(ClassEntidad_Producto obje)
         {
-            SqlCommand cmd = new SqlCommand("sp_Buscar_Producto", cn);
+            SqlCommand cmd = new SqlCommand("sp_Buscar_Productos", cn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@Nombre_Producto", obje.Nombre_Producto);
+            cmd.Parameters.AddWithValue("@Codigo", obje.Codigo);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -76,6 +92,65 @@ namespace Capa_Datos
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Nombre", obje.Nombre_Producto);
             cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
+            cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
+            cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            accion = cmd.Parameters["@Accion"].Value.ToString();
+            cn.Close();
+            return accion;
+        }
+    }
+
+    public class ClassDatos_Pedido
+    {
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+
+        public DataTable D_Buscar_Pedido(ClassEntidad_Pedido obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_Buscar_Pedidos", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@NumeroPedido", obje.Numero_Pedido);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+        public string D_Mantenimiento_Pedido(ClassEntidad_Pedido obje)
+        {
+            string accion = "";
+            SqlCommand cmd = new SqlCommand("sp_Registrar_Pedido", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@NombreProducto", obje.Nombre_Producto);
+            cmd.Parameters.AddWithValue("@Identificacion", obje.Identificacion);
+            cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
+            cmd.Parameters.AddWithValue("@Fecha", obje.Fecha);
+            cmd.Parameters.AddWithValue("@NumeroPedido", obje.Numero_Pedido);
+            cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
+            cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            accion = cmd.Parameters["@Accion"].Value.ToString();
+            cn.Close();
+            return accion;
+        }
+    }
+
+    public class ClassDatos_Detalle
+    {
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+        public string D_Mantenimiento_Detalle(ClassEntidad_Detalle obje)
+        {
+            string accion = "";
+            SqlCommand cmd = new SqlCommand("sp_Registrar_Detalle", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@NumeroPedido", obje.Numero_Pedido);
+            cmd.Parameters.AddWithValue("@Codigo", obje.Codigo);
+            cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
+            obje.Guia = "0";
+            cmd.Parameters.AddWithValue("@Guia", obje.Guia);
             cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
             cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
             if (cn.State == ConnectionState.Open) cn.Close();

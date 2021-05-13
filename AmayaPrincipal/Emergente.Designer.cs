@@ -29,11 +29,12 @@ namespace AmayaPrincipal
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Emergente));
             this.txtMensaje = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.imagenCerrar = new System.Windows.Forms.PictureBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.lblTexto = new System.Windows.Forms.Label();
-            this.imagenCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenCerrar)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +62,16 @@ namespace AmayaPrincipal
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // imagenCerrar
+            // 
+            this.imagenCerrar.Image = global::AmayaPrincipal.Properties.Resources.cerrar;
+            this.imagenCerrar.Location = new System.Drawing.Point(343, 4);
+            this.imagenCerrar.Name = "imagenCerrar";
+            this.imagenCerrar.Size = new System.Drawing.Size(14, 14);
+            this.imagenCerrar.TabIndex = 0;
+            this.imagenCerrar.TabStop = false;
+            this.imagenCerrar.Click += new System.EventHandler(this.imagenCerrar_Click);
+            // 
             // btnAceptar
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.Teal;
@@ -86,16 +97,6 @@ namespace AmayaPrincipal
             this.lblTexto.Size = new System.Drawing.Size(0, 21);
             this.lblTexto.TabIndex = 4;
             // 
-            // imagenCerrar
-            // 
-            this.imagenCerrar.Image = global::AmayaPrincipal.Properties.Resources.cerrar;
-            this.imagenCerrar.Location = new System.Drawing.Point(343, 4);
-            this.imagenCerrar.Name = "imagenCerrar";
-            this.imagenCerrar.Size = new System.Drawing.Size(14, 14);
-            this.imagenCerrar.TabIndex = 0;
-            this.imagenCerrar.TabStop = false;
-            this.imagenCerrar.Click += new System.EventHandler(this.imagenCerrar_Click);
-            // 
             // Emergente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -107,6 +108,7 @@ namespace AmayaPrincipal
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtMensaje);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Emergente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "¡Bienvenido!";
