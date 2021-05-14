@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AmayaPrincipal
 {
-    public partial class PrincipalAministrador : Form
+    public partial class RegistroAdm : Form
     {
-        public PrincipalAministrador()
+        public RegistroAdm()
         {
             InitializeComponent();
         }

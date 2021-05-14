@@ -1,7 +1,7 @@
 ﻿
 namespace AmayaPrincipal
 {
-    partial class PrincipalAministrador
+    partial class RegistroAdm
     {
         /// <summary>
         /// Required designer variable.
