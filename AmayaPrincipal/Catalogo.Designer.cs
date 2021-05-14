@@ -61,6 +61,7 @@ namespace AmayaPrincipal
             this.pnlCatalogo = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picProducto3)).BeginInit();
@@ -369,6 +370,7 @@ namespace AmayaPrincipal
             // 
             this.pnlCatalogo.AutoScroll = true;
             this.pnlCatalogo.BackColor = System.Drawing.Color.White;
+            this.pnlCatalogo.Controls.Add(this.panel1);
             this.pnlCatalogo.Controls.Add(this.label7);
             this.pnlCatalogo.Controls.Add(this.label6);
             this.pnlCatalogo.Controls.Add(this.pictureBox8);
@@ -425,6 +427,15 @@ namespace AmayaPrincipal
             this.label6.Size = new System.Drawing.Size(246, 32);
             this.label6.TabIndex = 48;
             this.label6.Text = "Para Realizar el pedido copia el codigo\r\nde producto en la seccion de pedidos\r\n";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(20, 16068);
+            this.panel1.TabIndex = 50;
             // 
             // Catalogo
             // 
@@ -490,5 +501,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Panel pnlCatalogo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel1;
     }
 }
