@@ -102,9 +102,12 @@ namespace AmayaPrincipal
         //Botón que permite cambiar a la pantalla eventos
         private void btnEventos_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(new Eventos());
+            AbrirFormulario(new RegistroAdm());
         }
 
-        
+        private void btnInventario_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new Productos());
+        }
     }
 }
