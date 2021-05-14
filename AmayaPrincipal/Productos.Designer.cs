@@ -34,7 +34,6 @@ namespace AmayaPrincipal
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ultimaColecciònToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -76,7 +75,6 @@ namespace AmayaPrincipal
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoToolStripMenuItem,
-            this.ultimaColecciònToolStripMenuItem,
             this.modificarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -91,13 +89,6 @@ namespace AmayaPrincipal
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
-            // 
-            // ultimaColecciònToolStripMenuItem
-            // 
-            this.ultimaColecciònToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ultimaColecciònToolStripMenuItem.Name = "ultimaColecciònToolStripMenuItem";
-            this.ultimaColecciònToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
-            this.ultimaColecciònToolStripMenuItem.Text = "Ultima Colecciòn";
             // 
             // modificarToolStripMenuItem
             // 
@@ -151,7 +142,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ultimaColecciònToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
