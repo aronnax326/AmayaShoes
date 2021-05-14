@@ -33,6 +33,7 @@ namespace AmayaPrincipal
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Imagen_Cerrar = new System.Windows.Forms.PictureBox();
             this.panelTema = new System.Windows.Forms.Panel();
             this.lblReproductor = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,11 +45,10 @@ namespace AmayaPrincipal
             this.btnHome = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
-            this.Imagen_Cerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,16 @@ namespace AmayaPrincipal
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(229, 534);
             this.panel2.TabIndex = 1;
+            // 
+            // Imagen_Cerrar
+            // 
+            this.Imagen_Cerrar.Image = global::AmayaPrincipal.Properties.Resources.cerrar;
+            this.Imagen_Cerrar.Location = new System.Drawing.Point(763, 4);
+            this.Imagen_Cerrar.Name = "Imagen_Cerrar";
+            this.Imagen_Cerrar.Size = new System.Drawing.Size(14, 14);
+            this.Imagen_Cerrar.TabIndex = 0;
+            this.Imagen_Cerrar.TabStop = false;
+            this.Imagen_Cerrar.Click += new System.EventHandler(this.Imagen_Cerrar_Click);
             // 
             // panelTema
             // 
@@ -132,7 +142,7 @@ namespace AmayaPrincipal
             this.btnInventario.TabIndex = 24;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = false;
-            
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // btnSalirPanel
             // 
@@ -251,16 +261,6 @@ namespace AmayaPrincipal
             this.btnPlay.TabStop = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // Imagen_Cerrar
-            // 
-            this.Imagen_Cerrar.Image = global::AmayaPrincipal.Properties.Resources.cerrar;
-            this.Imagen_Cerrar.Location = new System.Drawing.Point(763, 4);
-            this.Imagen_Cerrar.Name = "Imagen_Cerrar";
-            this.Imagen_Cerrar.Size = new System.Drawing.Size(14, 14);
-            this.Imagen_Cerrar.TabIndex = 0;
-            this.Imagen_Cerrar.TabStop = false;
-            this.Imagen_Cerrar.Click += new System.EventHandler(this.Imagen_Cerrar_Click);
-            // 
             // PrincipalContenedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,9 +287,9 @@ namespace AmayaPrincipal
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
