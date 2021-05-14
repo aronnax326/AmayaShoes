@@ -17,6 +17,5 @@ namespace AmayaPrincipal
             InitializeComponent();
         }
 
-   
     }
 }
