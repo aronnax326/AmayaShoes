@@ -86,12 +86,12 @@ namespace AmayaPrincipal
             // labNombre
             // 
             this.labNombre.AutoSize = true;
-            this.labNombre.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labNombre.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
             this.labNombre.Location = new System.Drawing.Point(34, 321);
             this.labNombre.Name = "labNombre";
-            this.labNombre.Size = new System.Drawing.Size(91, 25);
+            this.labNombre.Size = new System.Drawing.Size(75, 23);
             this.labNombre.TabIndex = 17;
-            this.labNombre.Text = "Nombre:";
+            this.labNombre.Text = "Usuario:";
             // 
             // textNombre
             // 
@@ -110,10 +110,10 @@ namespace AmayaPrincipal
             // labContraseña
             // 
             this.labContraseña.AutoSize = true;
-            this.labContraseña.Font = new System.Drawing.Font("Ebrima", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labContraseña.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
             this.labContraseña.Location = new System.Drawing.Point(281, 316);
             this.labContraseña.Name = "labContraseña";
-            this.labContraseña.Size = new System.Drawing.Size(118, 25);
+            this.labContraseña.Size = new System.Drawing.Size(104, 23);
             this.labContraseña.TabIndex = 20;
             this.labContraseña.Text = "Contraseña:";
             // 
