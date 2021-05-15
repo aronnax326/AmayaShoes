@@ -10,6 +10,7 @@ using Capa_Entidad;
 
 namespace Capa_Datos
 {
+
     public class ClassDatos_Login
     { 
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
@@ -37,6 +38,15 @@ namespace Capa_Datos
             SqlCommand cmd = new SqlCommand("sp_Buscar_Clientes", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Identificacion", obje.Identificacion);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
+
+        public DataTable D_Listar_Registrados()
+        {
+            SqlCommand cmd = new SqlCommand("sp_Listar_Registrados", cn);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -159,6 +169,19 @@ namespace Capa_Datos
             accion = cmd.Parameters["@Accion"].Value.ToString();
             cn.Close();
             return accion;
+        }
+    }
+
+    public class ClassDatos_Rol
+    {
+        public DataTable D_Listar_Rol()
+        {
+            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("sp_Listar_Rol", cn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
     }
 }

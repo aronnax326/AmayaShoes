@@ -27,6 +27,11 @@ namespace Capa_Negocio
         {
             return objd.D_Buscar_Clientes(obje);
         }
+
+        public DataTable N_Listar_Registados()
+        {
+            return objd.D_Listar_Registrados();
+        }
     }
     public class ClassNegocio_Registro
     {
@@ -71,6 +76,15 @@ namespace Capa_Negocio
         public string N_Mantenimiento_Detalle(ClassEntidad_Detalle obje)
         {
             return objdet.D_Mantenimiento_Detalle(obje);
+        }
+    }
+
+    public class ClassNegocio_Rol
+    {
+        ClassDatos_Rol objr = new ClassDatos_Rol();
+        public DataTable N_Listar_Rol()
+        {
+            return objr.D_Listar_Rol();
         }
     }
 }

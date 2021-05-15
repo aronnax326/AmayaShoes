@@ -65,12 +65,6 @@
     <Compile Include="Emergente.Designer.cs">
       <DependentUpon>Emergente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Eventos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Eventos.Designer.cs">
-      <DependentUpon>Eventos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
     </Compile>

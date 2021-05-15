@@ -108,11 +108,11 @@ namespace AmayaPrincipal
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AmayaPrincipal.Properties.Resources.profile;
-            this.pictureBox1.Location = new System.Drawing.Point(132, 82);
+            this.pictureBox1.Image = global::AmayaPrincipal.Properties.Resources._1;
+            this.pictureBox1.Location = new System.Drawing.Point(114, 64);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(185, 167);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

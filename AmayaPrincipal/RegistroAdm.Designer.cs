@@ -36,29 +36,29 @@ namespace AmayaPrincipal
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.labContraseña = new System.Windows.Forms.Label();
             this.groupBoxDatos = new System.Windows.Forms.GroupBox();
+            this.labRol = new System.Windows.Forms.Label();
+            this.comboBxRol = new System.Windows.Forms.ComboBox();
+            this.textTelefono = new System.Windows.Forms.TextBox();
+            this.textDireccion = new System.Windows.Forms.TextBox();
+            this.labTelefono = new System.Windows.Forms.Label();
+            this.labDireccion = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lbIdentificacion = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridListar = new System.Windows.Forms.DataGridView();
             this.groupBoxLista = new System.Windows.Forms.GroupBox();
-            this.labDireccion = new System.Windows.Forms.Label();
-            this.labTelefono = new System.Windows.Forms.Label();
-            this.textDireccion = new System.Windows.Forms.TextBox();
-            this.textTelefono = new System.Windows.Forms.TextBox();
-            this.comboBxRol = new System.Windows.Forms.ComboBox();
-            this.labRol = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBoxDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridListar)).BeginInit();
             this.groupBoxLista.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -139,6 +139,61 @@ namespace AmayaPrincipal
             this.groupBoxDatos.TabStop = false;
             this.groupBoxDatos.Text = "Datos";
             // 
+            // labRol
+            // 
+            this.labRol.AutoSize = true;
+            this.labRol.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labRol.Location = new System.Drawing.Point(43, 369);
+            this.labRol.Name = "labRol";
+            this.labRol.Size = new System.Drawing.Size(36, 20);
+            this.labRol.TabIndex = 11;
+            this.labRol.Text = "Rol:";
+            // 
+            // comboBxRol
+            // 
+            this.comboBxRol.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
+            this.comboBxRol.FormattingEnabled = true;
+            this.comboBxRol.Location = new System.Drawing.Point(226, 369);
+            this.comboBxRol.Name = "comboBxRol";
+            this.comboBxRol.Size = new System.Drawing.Size(113, 29);
+            this.comboBxRol.TabIndex = 10;
+            // 
+            // textTelefono
+            // 
+            this.textTelefono.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
+            this.textTelefono.Location = new System.Drawing.Point(226, 306);
+            this.textTelefono.Name = "textTelefono";
+            this.textTelefono.Size = new System.Drawing.Size(167, 28);
+            this.textTelefono.TabIndex = 9;
+            // 
+            // textDireccion
+            // 
+            this.textDireccion.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
+            this.textDireccion.Location = new System.Drawing.Point(226, 233);
+            this.textDireccion.Name = "textDireccion";
+            this.textDireccion.Size = new System.Drawing.Size(167, 28);
+            this.textDireccion.TabIndex = 8;
+            // 
+            // labTelefono
+            // 
+            this.labTelefono.AutoSize = true;
+            this.labTelefono.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labTelefono.Location = new System.Drawing.Point(37, 306);
+            this.labTelefono.Name = "labTelefono";
+            this.labTelefono.Size = new System.Drawing.Size(75, 20);
+            this.labTelefono.TabIndex = 7;
+            this.labTelefono.Text = "Telefono:";
+            // 
+            // labDireccion
+            // 
+            this.labDireccion.AutoSize = true;
+            this.labDireccion.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labDireccion.Location = new System.Drawing.Point(37, 237);
+            this.labDireccion.Name = "labDireccion";
+            this.labDireccion.Size = new System.Drawing.Size(78, 20);
+            this.labDireccion.TabIndex = 6;
+            this.labDireccion.Text = "Direcciòn:";
+            // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
@@ -193,17 +248,17 @@ namespace AmayaPrincipal
             this.txtIdentificacion.Size = new System.Drawing.Size(167, 28);
             this.txtIdentificacion.TabIndex = 0;
             // 
-            // dataGridView1
+            // dataGridListar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 53);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(472, 163);
-            this.dataGridView1.TabIndex = 23;
+            this.dataGridListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridListar.Location = new System.Drawing.Point(6, 53);
+            this.dataGridListar.Name = "dataGridListar";
+            this.dataGridListar.Size = new System.Drawing.Size(472, 163);
+            this.dataGridListar.TabIndex = 23;
             // 
             // groupBoxLista
             // 
-            this.groupBoxLista.Controls.Add(this.dataGridView1);
+            this.groupBoxLista.Controls.Add(this.dataGridListar);
             this.groupBoxLista.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold);
             this.groupBoxLista.Location = new System.Drawing.Point(39, 865);
             this.groupBoxLista.Name = "groupBoxLista";
@@ -211,61 +266,6 @@ namespace AmayaPrincipal
             this.groupBoxLista.TabIndex = 24;
             this.groupBoxLista.TabStop = false;
             this.groupBoxLista.Text = "Lista Registros";
-            // 
-            // labDireccion
-            // 
-            this.labDireccion.AutoSize = true;
-            this.labDireccion.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labDireccion.Location = new System.Drawing.Point(37, 237);
-            this.labDireccion.Name = "labDireccion";
-            this.labDireccion.Size = new System.Drawing.Size(78, 20);
-            this.labDireccion.TabIndex = 6;
-            this.labDireccion.Text = "Direcciòn:";
-            // 
-            // labTelefono
-            // 
-            this.labTelefono.AutoSize = true;
-            this.labTelefono.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labTelefono.Location = new System.Drawing.Point(37, 306);
-            this.labTelefono.Name = "labTelefono";
-            this.labTelefono.Size = new System.Drawing.Size(75, 20);
-            this.labTelefono.TabIndex = 7;
-            this.labTelefono.Text = "Telefono:";
-            // 
-            // textDireccion
-            // 
-            this.textDireccion.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
-            this.textDireccion.Location = new System.Drawing.Point(226, 233);
-            this.textDireccion.Name = "textDireccion";
-            this.textDireccion.Size = new System.Drawing.Size(167, 28);
-            this.textDireccion.TabIndex = 8;
-            // 
-            // textTelefono
-            // 
-            this.textTelefono.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
-            this.textTelefono.Location = new System.Drawing.Point(226, 306);
-            this.textTelefono.Name = "textTelefono";
-            this.textTelefono.Size = new System.Drawing.Size(167, 28);
-            this.textTelefono.TabIndex = 9;
-            // 
-            // comboBxRol
-            // 
-            this.comboBxRol.Font = new System.Drawing.Font("Ebrima", 12.25F, System.Drawing.FontStyle.Bold);
-            this.comboBxRol.FormattingEnabled = true;
-            this.comboBxRol.Location = new System.Drawing.Point(226, 369);
-            this.comboBxRol.Name = "comboBxRol";
-            this.comboBxRol.Size = new System.Drawing.Size(113, 29);
-            this.comboBxRol.TabIndex = 10;
-            // 
-            // labRol
-            // 
-            this.labRol.AutoSize = true;
-            this.labRol.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
-            this.labRol.Location = new System.Drawing.Point(43, 369);
-            this.labRol.Name = "labRol";
-            this.labRol.Size = new System.Drawing.Size(36, 20);
-            this.labRol.TabIndex = 11;
-            this.labRol.Text = "Rol:";
             // 
             // menuStrip1
             // 
@@ -279,15 +279,6 @@ namespace AmayaPrincipal
             this.menuStrip1.Size = new System.Drawing.Size(546, 31);
             this.menuStrip1.TabIndex = 25;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 31);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(546, 20);
-            this.panel1.TabIndex = 26;
             // 
             // nuevoToolStripMenuItem
             // 
@@ -317,6 +308,15 @@ namespace AmayaPrincipal
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(86, 27);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 31);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(546, 20);
+            this.panel1.TabIndex = 26;
+            // 
             // RegistroAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,10 +338,11 @@ namespace AmayaPrincipal
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "RegistroAdm";
             this.Text = "PrincipalAministrador";
+            this.Load += new System.EventHandler(this.RegistroAdm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBoxDatos.ResumeLayout(false);
             this.groupBoxDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridListar)).EndInit();
             this.groupBoxLista.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -364,7 +365,7 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label lbIdentificacion;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridListar;
         private System.Windows.Forms.Label labRol;
         private System.Windows.Forms.ComboBox comboBxRol;
         private System.Windows.Forms.TextBox textTelefono;
