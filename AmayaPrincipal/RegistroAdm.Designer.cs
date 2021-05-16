@@ -66,19 +66,19 @@ namespace AmayaPrincipal
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Ebrima", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(73, 156);
+            this.label2.Font = new System.Drawing.Font("Ebrima", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(159, 77);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(273, 37);
+            this.label2.Size = new System.Drawing.Size(219, 30);
             this.label2.TabIndex = 12;
             this.label2.Text = "Registro Empleados";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AmayaPrincipal.Properties.Resources._1;
-            this.pictureBox2.Location = new System.Drawing.Point(389, 156);
+            this.pictureBox2.Location = new System.Drawing.Point(203, 142);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(103, 97);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 117);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
@@ -142,10 +142,10 @@ namespace AmayaPrincipal
             // labRol
             // 
             this.labRol.AutoSize = true;
-            this.labRol.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labRol.Font = new System.Drawing.Font("Ebrima", 11.25F);
             this.labRol.Location = new System.Drawing.Point(43, 369);
             this.labRol.Name = "labRol";
-            this.labRol.Size = new System.Drawing.Size(36, 20);
+            this.labRol.Size = new System.Drawing.Size(34, 20);
             this.labRol.TabIndex = 11;
             this.labRol.Text = "Rol:";
             // 
@@ -177,50 +177,50 @@ namespace AmayaPrincipal
             // labTelefono
             // 
             this.labTelefono.AutoSize = true;
-            this.labTelefono.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labTelefono.Font = new System.Drawing.Font("Ebrima", 11.25F);
             this.labTelefono.Location = new System.Drawing.Point(37, 306);
             this.labTelefono.Name = "labTelefono";
-            this.labTelefono.Size = new System.Drawing.Size(75, 20);
+            this.labTelefono.Size = new System.Drawing.Size(71, 20);
             this.labTelefono.TabIndex = 7;
             this.labTelefono.Text = "Teléfono:";
             // 
             // labDireccion
             // 
             this.labDireccion.AutoSize = true;
-            this.labDireccion.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.labDireccion.Font = new System.Drawing.Font("Ebrima", 11.25F);
             this.labDireccion.Location = new System.Drawing.Point(37, 237);
             this.labDireccion.Name = "labDireccion";
-            this.labDireccion.Size = new System.Drawing.Size(78, 20);
+            this.labDireccion.Size = new System.Drawing.Size(75, 20);
             this.labDireccion.TabIndex = 6;
             this.labDireccion.Text = "Dirección:";
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblApellido.Font = new System.Drawing.Font("Ebrima", 11.25F);
             this.lblApellido.Location = new System.Drawing.Point(37, 176);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(71, 20);
+            this.lblApellido.Size = new System.Drawing.Size(69, 20);
             this.lblApellido.TabIndex = 5;
             this.lblApellido.Text = "Apellido:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lblNombre.Font = new System.Drawing.Font("Ebrima", 11.25F);
             this.lblNombre.Location = new System.Drawing.Point(37, 113);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(71, 20);
+            this.lblNombre.Size = new System.Drawing.Size(67, 20);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Nombre:";
             // 
             // lbIdentificacion
             // 
             this.lbIdentificacion.AutoSize = true;
-            this.lbIdentificacion.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbIdentificacion.Font = new System.Drawing.Font("Ebrima", 11.25F);
             this.lbIdentificacion.Location = new System.Drawing.Point(37, 50);
             this.lbIdentificacion.Name = "lbIdentificacion";
-            this.lbIdentificacion.Size = new System.Drawing.Size(108, 20);
+            this.lbIdentificacion.Size = new System.Drawing.Size(102, 20);
             this.lbIdentificacion.TabIndex = 3;
             this.lbIdentificacion.Text = "Identificación:";
             // 

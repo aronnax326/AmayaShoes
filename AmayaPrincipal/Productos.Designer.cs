@@ -34,32 +34,34 @@ namespace AmayaPrincipal
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DetallesProductos = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grupProducDisponible.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.DetallesProductos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lablProductos
             // 
             this.lablProductos.AutoSize = true;
             this.lablProductos.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lablProductos.Location = new System.Drawing.Point(212, 64);
+            this.lablProductos.Location = new System.Drawing.Point(212, 66);
             this.lablProductos.Name = "lablProductos";
             this.lablProductos.Size = new System.Drawing.Size(113, 30);
             this.lablProductos.TabIndex = 0;
@@ -68,8 +70,8 @@ namespace AmayaPrincipal
             // grupProducDisponible
             // 
             this.grupProducDisponible.Controls.Add(this.dataGridView1);
-            this.grupProducDisponible.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grupProducDisponible.Location = new System.Drawing.Point(12, 499);
+            this.grupProducDisponible.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grupProducDisponible.Location = new System.Drawing.Point(12, 614);
             this.grupProducDisponible.Name = "grupProducDisponible";
             this.grupProducDisponible.Size = new System.Drawing.Size(523, 252);
             this.grupProducDisponible.TabIndex = 1;
@@ -86,6 +88,7 @@ namespace AmayaPrincipal
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoToolStripMenuItem,
             this.registrarToolStripMenuItem,
@@ -99,31 +102,38 @@ namespace AmayaPrincipal
             // 
             // nuevoToolStripMenuItem
             // 
-            this.nuevoToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nuevoToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(64, 25);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
+            // 
+            // registrarToolStripMenuItem
+            // 
+            this.registrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
+            this.registrarToolStripMenuItem.Text = "Registrar";
             // 
             // modificarToolStripMenuItem
             // 
-            this.modificarToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificarToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.modificarToolStripMenuItem.Text = "Modificar";
             // 
             // eliminarToolStripMenuItem
             // 
-            this.eliminarToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(562, 30);
+            this.panel1.Size = new System.Drawing.Size(562, 20);
             this.panel1.TabIndex = 4;
             // 
             // DetallesProductos
@@ -138,86 +148,13 @@ namespace AmayaPrincipal
             this.DetallesProductos.Controls.Add(this.label3);
             this.DetallesProductos.Controls.Add(this.label2);
             this.DetallesProductos.Controls.Add(this.label1);
-            this.DetallesProductos.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DetallesProductos.Location = new System.Drawing.Point(34, 122);
+            this.DetallesProductos.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DetallesProductos.Location = new System.Drawing.Point(12, 268);
             this.DetallesProductos.Name = "DetallesProductos";
-            this.DetallesProductos.Size = new System.Drawing.Size(500, 340);
+            this.DetallesProductos.Size = new System.Drawing.Size(520, 340);
             this.DetallesProductos.TabIndex = 5;
             this.DetallesProductos.TabStop = false;
             this.DetallesProductos.Text = "Datos de Producto";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Referencia";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 106);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 21);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Cantidad";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 215);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 21);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Descripción";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(272, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 21);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Precio";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(132, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(85, 28);
-            this.textBox1.TabIndex = 5;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(375, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(85, 28);
-            this.textBox2.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(132, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 28);
-            this.textBox3.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(132, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(85, 28);
-            this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
@@ -227,12 +164,88 @@ namespace AmayaPrincipal
             this.textBox5.Size = new System.Drawing.Size(328, 104);
             this.textBox5.TabIndex = 9;
             // 
-            // registrarToolStripMenuItem
+            // textBox4
             // 
-            this.registrarToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(90, 25);
-            this.registrarToolStripMenuItem.Text = "Registrar";
+            this.textBox4.Location = new System.Drawing.Point(132, 157);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(85, 29);
+            this.textBox4.TabIndex = 8;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(132, 106);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(159, 29);
+            this.textBox3.TabIndex = 7;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(375, 53);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(85, 29);
+            this.textBox2.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(132, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(85, 29);
+            this.textBox1.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(272, 56);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 21);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Precio";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 21);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Descripción";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Cantidad";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 106);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 21);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Nombre";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Referencia";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AmayaPrincipal.Properties.Resources._1;
+            this.pictureBox1.Location = new System.Drawing.Point(204, 124);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Productos
             // 
@@ -241,6 +254,7 @@ namespace AmayaPrincipal
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(579, 596);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DetallesProductos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grupProducDisponible);
@@ -256,6 +270,7 @@ namespace AmayaPrincipal
             this.menuStrip1.PerformLayout();
             this.DetallesProductos.ResumeLayout(false);
             this.DetallesProductos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -283,5 +298,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

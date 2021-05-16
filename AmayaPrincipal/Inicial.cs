@@ -32,8 +32,6 @@ namespace AmayaPrincipal
             objeClientes.Usuario = txtUsuario.Text;
             objeClientes.Contrasena = txtContrasena.Text;
             dt = objnClientes.N_Cliente(objeClientes);
-            int filas = dt.Rows.Count;
-            MessageBox.Show(filas.ToString());
             if (dt.Rows.Count != 0)
             {
                 Emergente nueva = new Emergente();
