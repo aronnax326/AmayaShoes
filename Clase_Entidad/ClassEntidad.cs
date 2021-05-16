@@ -29,6 +29,20 @@ namespace Capa_Entidad
         public String Apellido { get; set; }
         public String Direccion { get; set; }
         public int Telefono { get; set; }
+        public int IdRol { get; set; }
+        public String Accion { get; set; }
+    }
+
+    public class ClassEntidad_Registro_Admin
+    {
+        public String Usuario { get; set; }
+        public String Contrasena { get; set; }
+        public int Identificacion { get; set; }
+        public String Nombre { get; set; }
+        public String Apellido { get; set; }
+        public String Direccion { get; set; }
+        public int Telefono { get; set; }
+        public int IdRol { get; set; }
         public String Accion { get; set; }
     }
 
@@ -44,6 +58,7 @@ namespace Capa_Entidad
     public class ClassEntidad_Pedido
     {
         public int Numero_Pedido { get; set; }
+        public String Codigo { get; set; }
         public int Identificacion { get; set; }
         public String Nombre_Producto { get; set; }
         public int Cantidad { get; set; }

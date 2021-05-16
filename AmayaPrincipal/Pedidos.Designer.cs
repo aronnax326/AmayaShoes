@@ -60,10 +60,13 @@ namespace AmayaPrincipal
             this.btnBuscar = new System.Windows.Forms.Button();
             this.textFecha = new System.Windows.Forms.Label();
             this.Fecha = new System.Windows.Forms.Timer(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCarrito1
@@ -71,7 +74,7 @@ namespace AmayaPrincipal
             this.lblCarrito1.AutoSize = true;
             this.lblCarrito1.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCarrito1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblCarrito1.Location = new System.Drawing.Point(245, 22);
+            this.lblCarrito1.Location = new System.Drawing.Point(245, 29);
             this.lblCarrito1.Name = "lblCarrito1";
             this.lblCarrito1.Size = new System.Drawing.Size(91, 30);
             this.lblCarrito1.TabIndex = 0;
@@ -92,7 +95,7 @@ namespace AmayaPrincipal
             this.groupBox1.Controls.Add(this.dataGridViewProd);
             this.groupBox1.Controls.Add(this.dataGridViewListar);
             this.groupBox1.Controls.Add(this.dataGridViewPedido);
-            this.groupBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(39, 387);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(494, 142);
@@ -353,6 +356,24 @@ namespace AmayaPrincipal
             // 
             this.Fecha.Tick += new System.EventHandler(this.Fecha_Tick);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(579, 29);
+            this.menuStrip1.TabIndex = 28;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // nuevoToolStripMenuItem
+            // 
+            this.nuevoToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 12F);
+            this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(68, 25);
+            this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -385,8 +406,10 @@ namespace AmayaPrincipal
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblCarrito2);
             this.Controls.Add(this.lblCarrito1);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(0, 25);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Pedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carrito";
@@ -395,6 +418,8 @@ namespace AmayaPrincipal
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,5 +457,7 @@ namespace AmayaPrincipal
         private System.Windows.Forms.DataGridView dataGridViewProd;
         private System.Windows.Forms.Label textFecha;
         private System.Windows.Forms.Timer Fecha;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
     }
 }
