@@ -29,7 +29,7 @@ namespace AmayaPrincipal
         //Método que controla el mensaje mostrado.
         public void Cambiar_Mensaje_Corregir()
         {
-            txtMensaje.Text = "Los datos son erroneos, por favor verifique.";
+            txtMensaje.Text = "Datos erroneos, por favor verifique.";
             this.btnAceptar.Hide();
         }
 

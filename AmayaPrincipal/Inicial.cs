@@ -32,17 +32,20 @@ namespace AmayaPrincipal
             objeClientes.Usuario = txtUsuario.Text;
             objeClientes.Contrasena = txtContrasena.Text;
             dt = objnClientes.N_Cliente(objeClientes);
-            if (dt.Rows.Count > 0)
+            int filas = dt.Rows.Count;
+            MessageBox.Show(filas.ToString());
+            if (dt.Rows.Count != 0)
             {
                 Emergente nueva = new Emergente();
                 nueva.Cambiar_Mensaje_Ingreso();
                 nueva.Show();
                 this.Hide();
             }
-            else
+            else if (dt.Rows.Count == 0)
             {
                 Emergente nueva = new Emergente();
                 nueva.Cambiar_Mensaje_Corregir();
+                nueva.Show();
             }
         }
 
