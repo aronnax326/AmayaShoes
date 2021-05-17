@@ -109,5 +109,10 @@ namespace AmayaPrincipal
         {
             AbrirFormulario(new Productos());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(new PedidosRealizados());
+        }
     }
 }

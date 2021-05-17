@@ -38,8 +38,15 @@ namespace AmayaPrincipal
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            mantenimiento("1");
-            this.Close();
+            try
+            {
+                mantenimiento("1");
+                this.Close();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Verifique los datos ingresados.");
+            }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

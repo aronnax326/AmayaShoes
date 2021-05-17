@@ -32,17 +32,18 @@ namespace AmayaPrincipal
             objeClientes.Usuario = txtUsuario.Text;
             objeClientes.Contrasena = txtContrasena.Text;
             dt = objnClientes.N_Cliente(objeClientes);
-            if (dt.Rows.Count > 0)
+            if (dt.Rows.Count != 0)
             {
                 Emergente nueva = new Emergente();
                 nueva.Cambiar_Mensaje_Ingreso();
                 nueva.Show();
                 this.Hide();
             }
-            else
+            else if (dt.Rows.Count == 0)
             {
                 Emergente nueva = new Emergente();
                 nueva.Cambiar_Mensaje_Corregir();
+                nueva.Show();
             }
         }
 
@@ -85,10 +86,6 @@ namespace AmayaPrincipal
 
         }
 
-        private void Inicial_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnIngresar_Click_1(object sender, EventArgs e)
         {
@@ -100,6 +97,12 @@ namespace AmayaPrincipal
             Registro nueva = new Registro();
             nueva.Show();
             
+            
+        }
+
+        private void Inicial_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -85,7 +85,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(155, 175);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(153, 22);
-            this.txtUsuario.TabIndex = 3;
+            this.txtUsuario.TabIndex = 1;
             // 
             // label3
             // 
@@ -107,7 +107,7 @@
             this.txtContrasena.Location = new System.Drawing.Point(455, 176);
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(153, 22);
-            this.txtContrasena.TabIndex = 5;
+            this.txtContrasena.TabIndex = 2;
             this.txtContrasena.UseSystemPasswordChar = true;
             // 
             // groupBox1
@@ -150,17 +150,18 @@
             this.txtIdentificacion.Location = new System.Drawing.Point(356, 216);
             this.txtIdentificacion.Name = "txtIdentificacion";
             this.txtIdentificacion.Size = new System.Drawing.Size(133, 26);
-            this.txtIdentificacion.TabIndex = 19;
+            this.txtIdentificacion.TabIndex = 5;
             // 
             // txtDireccion
             // 
             this.txtDireccion.BackColor = System.Drawing.Color.Teal;
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccion.Font = new System.Drawing.Font("Ebrima", 14.25F);
             this.txtDireccion.ForeColor = System.Drawing.Color.White;
             this.txtDireccion.Location = new System.Drawing.Point(356, 333);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(178, 25);
-            this.txtDireccion.TabIndex = 17;
+            this.txtDireccion.Size = new System.Drawing.Size(178, 26);
+            this.txtDireccion.TabIndex = 7;
             // 
             // label9
             // 
@@ -171,17 +172,17 @@
             this.label9.Size = new System.Drawing.Size(96, 25);
             this.label9.TabIndex = 16;
             this.label9.Text = "Direccion:";
-            
             // 
             // txtTelefono
             // 
             this.txtTelefono.BackColor = System.Drawing.Color.Teal;
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.Font = new System.Drawing.Font("Ebrima", 14.25F);
             this.txtTelefono.ForeColor = System.Drawing.Color.White;
             this.txtTelefono.Location = new System.Drawing.Point(356, 278);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(178, 25);
-            this.txtTelefono.TabIndex = 15;
+            this.txtTelefono.Size = new System.Drawing.Size(178, 26);
+            this.txtTelefono.TabIndex = 6;
             // 
             // label8
             // 
@@ -202,7 +203,7 @@
             this.txtApellido.Location = new System.Drawing.Point(356, 146);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(178, 26);
-            this.txtApellido.TabIndex = 9;
+            this.txtApellido.TabIndex = 4;
             // 
             // label5
             // 
@@ -223,8 +224,7 @@
             this.txtNombre.Location = new System.Drawing.Point(356, 81);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(178, 26);
-            this.txtNombre.TabIndex = 6;
-            
+            this.txtNombre.TabIndex = 3;
             // 
             // label4
             // 

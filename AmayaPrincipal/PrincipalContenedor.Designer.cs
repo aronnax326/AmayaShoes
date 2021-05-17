@@ -36,6 +36,7 @@ namespace AmayaPrincipal
             this.panelTema = new System.Windows.Forms.Panel();
             this.lblReproductor = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnInventario = new System.Windows.Forms.Button();
             this.btnSalirPanel = new System.Windows.Forms.Button();
             this.btnRegistroPersonal = new System.Windows.Forms.Button();
@@ -115,6 +116,26 @@ namespace AmayaPrincipal
             this.label2.TabIndex = 23;
             this.label2.Text = "Bienvenido ";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Ebrima", 12F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::AmayaPrincipal.Properties.Resources.portapapeles;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(207, 36);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Pedidos Realizados";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btnInventario
             // 
             this.btnInventario.BackColor = System.Drawing.Color.DarkSlateGray;
@@ -126,13 +147,13 @@ namespace AmayaPrincipal
             this.btnInventario.ForeColor = System.Drawing.Color.White;
             this.btnInventario.Image = global::AmayaPrincipal.Properties.Resources.box;
             this.btnInventario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventario.Location = new System.Drawing.Point(0, 242);
+            this.btnInventario.Location = new System.Drawing.Point(0, 279);
             this.btnInventario.Name = "btnInventario";
             this.btnInventario.Size = new System.Drawing.Size(207, 36);
             this.btnInventario.TabIndex = 24;
             this.btnInventario.Text = "Inventario";
             this.btnInventario.UseVisualStyleBackColor = false;
-            
+            this.btnInventario.Click += new System.EventHandler(this.btnInventario_Click);
             // 
             // btnSalirPanel
             // 
@@ -145,7 +166,7 @@ namespace AmayaPrincipal
             this.btnSalirPanel.ForeColor = System.Drawing.Color.White;
             this.btnSalirPanel.Image = global::AmayaPrincipal.Properties.Resources.log_out;
             this.btnSalirPanel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalirPanel.Location = new System.Drawing.Point(0, 284);
+            this.btnSalirPanel.Location = new System.Drawing.Point(0, 321);
             this.btnSalirPanel.Name = "btnSalirPanel";
             this.btnSalirPanel.Size = new System.Drawing.Size(207, 36);
             this.btnSalirPanel.TabIndex = 22;
@@ -164,11 +185,12 @@ namespace AmayaPrincipal
             this.btnRegistroPersonal.ForeColor = System.Drawing.Color.White;
             this.btnRegistroPersonal.Image = global::AmayaPrincipal.Properties.Resources.user;
             this.btnRegistroPersonal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistroPersonal.Location = new System.Drawing.Point(0, 196);
+            this.btnRegistroPersonal.Location = new System.Drawing.Point(0, 237);
             this.btnRegistroPersonal.Name = "btnRegistroPersonal";
             this.btnRegistroPersonal.Size = new System.Drawing.Size(207, 36);
             this.btnRegistroPersonal.TabIndex = 21;
-            this.btnRegistroPersonal.Text = "Empleados";
+            this.btnRegistroPersonal.Text = "Usuarios Registrados";
+            this.btnRegistroPersonal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRegistroPersonal.UseVisualStyleBackColor = false;
             this.btnRegistroPersonal.Click += new System.EventHandler(this.btnEventos_Click);
             // 
@@ -268,6 +290,7 @@ namespace AmayaPrincipal
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(788, 617);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnInventario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSalirPanel);
@@ -314,5 +337,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnInventario;
+        private System.Windows.Forms.Button button1;
     }
 }

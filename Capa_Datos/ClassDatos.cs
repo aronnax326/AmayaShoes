@@ -10,6 +10,7 @@ using Capa_Entidad;
 
 namespace Capa_Datos
 {
+
     public class ClassDatos_Login
     { 
         SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
@@ -42,6 +43,15 @@ namespace Capa_Datos
             da.Fill(dt);
             return dt;
         }
+
+        public DataTable D_Listar_Registrados()
+        {
+            SqlCommand cmd = new SqlCommand("sp_Listar_Registrados", cn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
     
     public class ClassDatos_Registro
@@ -60,6 +70,33 @@ namespace Capa_Datos
             cmd.Parameters.AddWithValue("@Apellido", obje.Apellido);
             cmd.Parameters.AddWithValue("@Telefono", obje.Telefono);
             cmd.Parameters.AddWithValue("@Direccion", obje.Direccion);
+            cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
+            cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
+            if (cn.State == ConnectionState.Open) cn.Close();
+            cn.Open();
+            cmd.ExecuteNonQuery();
+            accion = cmd.Parameters["@Accion"].Value.ToString();
+            cn.Close();
+            return accion;
+        }
+    }
+
+    public class ClassDatos_Registro_Admin
+    {
+        SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+        public string D_Mantenimiento_Clientes_Admin(ClassEntidad_Registro_Admin obje)
+        {
+            string accion = "";
+            SqlCommand cmd = new SqlCommand("sp_Mantenimiento_Registros", cn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Usuario", obje.Usuario);
+            cmd.Parameters.AddWithValue("@Contrasena", obje.Contrasena);
+            cmd.Parameters.AddWithValue("@Identificacion", obje.Identificacion);
+            cmd.Parameters.AddWithValue("@Nombre", obje.Nombre);
+            cmd.Parameters.AddWithValue("@Apellido", obje.Apellido);
+            cmd.Parameters.AddWithValue("@Telefono", obje.Telefono);
+            cmd.Parameters.AddWithValue("@Direccion", obje.Direccion);
+            cmd.Parameters.AddWithValue("@Rol", obje.IdRol);
             cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
             cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
             if (cn.State == ConnectionState.Open) cn.Close();
@@ -98,7 +135,7 @@ namespace Capa_Datos
         public string D_Mantenimiento_Producto(ClassEntidad_Producto obje)
         {
             string accion = "";
-            SqlCommand cmd = new SqlCommand("sp_Actualizar_Producto", cn);
+            SqlCommand cmd = new SqlCommand("sp_Mantenimiento_Producto", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Nombre", obje.Nombre_Producto);
             cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
@@ -131,13 +168,14 @@ namespace Capa_Datos
         public string D_Mantenimiento_Pedido(ClassEntidad_Pedido obje)
         {
             string accion = "";
-            SqlCommand cmd = new SqlCommand("sp_Registrar_Pedido", cn);
+            SqlCommand cmd = new SqlCommand("sp_Mantenimiento_Pedido", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@NombreProducto", obje.Nombre_Producto);
             cmd.Parameters.AddWithValue("@Identificacion", obje.Identificacion);
             cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
             cmd.Parameters.AddWithValue("@Fecha", obje.Fecha);
             cmd.Parameters.AddWithValue("@NumeroPedido", obje.Numero_Pedido);
+            cmd.Parameters.AddWithValue("@CodigoProducto", obje.Codigo);
             cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
             cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
             if (cn.State == ConnectionState.Open) cn.Close();
@@ -146,6 +184,15 @@ namespace Capa_Datos
             accion = cmd.Parameters["@Accion"].Value.ToString();
             cn.Close();
             return accion;
+        }
+
+        public DataTable D_Listar_Pedidos()
+        {
+            SqlCommand cmd = new SqlCommand("sp_Listar_Pedidos", cn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
     }
 
@@ -170,6 +217,19 @@ namespace Capa_Datos
             accion = cmd.Parameters["@Accion"].Value.ToString();
             cn.Close();
             return accion;
+        }
+    }
+
+    public class ClassDatos_Rol
+    {
+        public DataTable D_Listar_Rol()
+        {
+            SqlConnection cn = new SqlConnection(ConfigurationManager.ConnectionStrings["sql"].ConnectionString);
+            SqlCommand cmd = new SqlCommand("sp_Listar_Rol", cn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
         }
     }
 }

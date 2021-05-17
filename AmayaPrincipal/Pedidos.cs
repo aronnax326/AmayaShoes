@@ -37,6 +37,7 @@ namespace AmayaPrincipal
             objentped.Fecha = Convert.ToDateTime(textFecha.Text);
             objentped.Nombre_Producto = textNomProducto.Text;
             objentped.Cantidad = Convert.ToInt32(textCantidad.Text);
+            objentped.Codigo = textCodigo.Text;
             objentped.Accion = accion;
             string men = objnegped.N_Mantenimiento_Pedido(objentped);
             MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -63,30 +64,39 @@ namespace AmayaPrincipal
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            if(textIdentificacion.Text != "")
+            try
             {
-                Generar_Numero_Pedido();
-                objent.Identificacion = Convert.ToInt32(textIdentificacion.Text);
-                DataTable dt = new DataTable();
-                dt = objneg.N_Buscar_Clientes(objent);
-                dataGridViewListar.DataSource = dt;
-                textNombre.Text = dataGridViewListar[0, 0].Value.ToString();
-                textApellido.Text = dataGridViewListar[1, 0].Value.ToString();
-                textDireccion.Text = dataGridViewListar[2, 0].Value.ToString();
-                textTelefono.Text = dataGridViewListar[3, 0].Value.ToString();
+                if (textIdentificacion.Text != "")
+                {
+                    Generar_Numero_Pedido();
+                    objent.Identificacion = Convert.ToInt32(textIdentificacion.Text);
+                    DataTable dt = new DataTable();
+                    dt = objneg.N_Buscar_Clientes(objent);
+                    dataGridViewListar.DataSource = dt;
+                    textNombre.Text = dataGridViewListar[0, 0].Value.ToString();
+                    textApellido.Text = dataGridViewListar[1, 0].Value.ToString();
+                    textDireccion.Text = dataGridViewListar[2, 0].Value.ToString();
+                    textTelefono.Text = dataGridViewListar[3, 0].Value.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Por favor ingrese un numero de identificación");
+                }
             }
-            else
+            catch (Exception)
             {
                 MessageBox.Show("Por favor ingrese un numero de identificación");
             }
+            
 
 
         }
 
         private void btnPedir_Click(object sender, EventArgs e)
         {
+            
             mantenimiento_pedido("1");
-            objentped.Numero_Pedido= Convert.ToInt32(textNumPedido.Text);
+            objentped.Numero_Pedido = Convert.ToInt32(textNumPedido.Text);
             DataTable dt = new DataTable();
             dt = objnegped.N_Buscar_Pedido(objentped);
             dataGridViewPedido.DataSource = dt;
@@ -95,7 +105,14 @@ namespace AmayaPrincipal
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            mantenimiento_detalle("1");
+            try
+            {
+                mantenimiento_detalle("1");
+            }
+            catch
+            {
+                MessageBox.Show("Verifique los datos del pedido");
+            }
         }
 
         private void textCodigo_TextChanged(object sender, EventArgs e)
@@ -120,6 +137,24 @@ namespace AmayaPrincipal
             Fecha.Enabled = true;
         }
 
-     
+        private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        void limpiar()
+        {
+            textNumPedido.Text = "";
+            textIdentificacion.Text = "";
+            textNomProducto.Text = "";
+            textCantidad.Text = "";
+            textNombre.Text = "";
+            textApellido.Text = "";
+            textDireccion.Text = "";
+            textTelefono.Text = "";
+            textCodigo.Text = "";
+            dataGridViewProd.Columns.Clear();
+            
+        }
     }
 }

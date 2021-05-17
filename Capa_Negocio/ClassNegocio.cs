@@ -27,6 +27,11 @@ namespace Capa_Negocio
         {
             return objd.D_Buscar_Clientes(obje);
         }
+
+        public DataTable N_Listar_Registados()
+        {
+            return objd.D_Listar_Registrados();
+        }
     }
     public class ClassNegocio_Registro
     {
@@ -34,6 +39,15 @@ namespace Capa_Negocio
         public string N_Mantenimiento_Clientes(ClassEntidad_Registro obje)
         {
             return objd.D_Mantenimiento_Clientes(obje);
+        }
+    }
+
+    public class ClassNegocio_Registro_Admin
+    {
+        ClassDatos_Registro_Admin objdr = new ClassDatos_Registro_Admin();
+        public string N_Mantenimiento_Clientes_Admin(ClassEntidad_Registro_Admin obje)
+        {
+            return objdr.D_Mantenimiento_Clientes_Admin(obje);
         }
     }
 
@@ -68,6 +82,11 @@ namespace Capa_Negocio
         {
             return objp.D_Mantenimiento_Pedido(obje);
         }
+
+        public DataTable N_Listar_Pedidos()
+        {
+            return objp.D_Listar_Pedidos();
+        }
     }
 
     public class ClassNegocio_Detalle
@@ -78,6 +97,15 @@ namespace Capa_Negocio
             return objdet.D_Mantenimiento_Detalle(obje);
         }
 
+    }
+
+    public class ClassNegocio_Rol
+    {
+        ClassDatos_Rol objr = new ClassDatos_Rol();
+        public DataTable N_Listar_Rol()
+        {
+            return objr.D_Listar_Rol();
+        }
     }
 }
 
