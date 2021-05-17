@@ -31,7 +31,7 @@ namespace AmayaPrincipal
         {
             this.lablProductos = new System.Windows.Forms.Label();
             this.grupProducDisponible = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridLista = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,11 +39,11 @@ namespace AmayaPrincipal
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DetallesProductos = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textDescripcion = new System.Windows.Forms.TextBox();
+            this.textCantidad = new System.Windows.Forms.TextBox();
+            this.textNombre = new System.Windows.Forms.TextBox();
+            this.textPrecio = new System.Windows.Forms.TextBox();
+            this.textCodigo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@ namespace AmayaPrincipal
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grupProducDisponible.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridLista)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.DetallesProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +69,7 @@ namespace AmayaPrincipal
             // 
             // grupProducDisponible
             // 
-            this.grupProducDisponible.Controls.Add(this.dataGridView1);
+            this.grupProducDisponible.Controls.Add(this.dataGridLista);
             this.grupProducDisponible.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grupProducDisponible.Location = new System.Drawing.Point(12, 614);
             this.grupProducDisponible.Name = "grupProducDisponible";
@@ -78,13 +78,14 @@ namespace AmayaPrincipal
             this.grupProducDisponible.TabStop = false;
             this.grupProducDisponible.Text = "Productos Disponibles";
             // 
-            // dataGridView1
+            // dataGridLista
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 54);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(484, 185);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridLista.Location = new System.Drawing.Point(21, 54);
+            this.dataGridLista.Name = "dataGridLista";
+            this.dataGridLista.Size = new System.Drawing.Size(484, 185);
+            this.dataGridLista.TabIndex = 0;
+            this.dataGridLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridLista_CellContentClick_1);
             // 
             // menuStrip1
             // 
@@ -96,7 +97,7 @@ namespace AmayaPrincipal
             this.eliminarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(562, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(596, 29);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,6 +107,7 @@ namespace AmayaPrincipal
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
             this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(64, 25);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
+            this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // registrarToolStripMenuItem
             // 
@@ -113,6 +115,7 @@ namespace AmayaPrincipal
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
             this.registrarToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.registrarToolStripMenuItem.Text = "Registrar";
+            this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click);
             // 
             // modificarToolStripMenuItem
             // 
@@ -120,6 +123,7 @@ namespace AmayaPrincipal
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(85, 25);
             this.modificarToolStripMenuItem.Text = "Modificar";
+            this.modificarToolStripMenuItem.Click += new System.EventHandler(this.modificarToolStripMenuItem_Click);
             // 
             // eliminarToolStripMenuItem
             // 
@@ -127,6 +131,7 @@ namespace AmayaPrincipal
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(75, 25);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click_1);
             // 
             // panel1
             // 
@@ -138,11 +143,11 @@ namespace AmayaPrincipal
             // 
             // DetallesProductos
             // 
-            this.DetallesProductos.Controls.Add(this.textBox5);
-            this.DetallesProductos.Controls.Add(this.textBox4);
-            this.DetallesProductos.Controls.Add(this.textBox3);
-            this.DetallesProductos.Controls.Add(this.textBox2);
-            this.DetallesProductos.Controls.Add(this.textBox1);
+            this.DetallesProductos.Controls.Add(this.textDescripcion);
+            this.DetallesProductos.Controls.Add(this.textCantidad);
+            this.DetallesProductos.Controls.Add(this.textNombre);
+            this.DetallesProductos.Controls.Add(this.textPrecio);
+            this.DetallesProductos.Controls.Add(this.textCodigo);
             this.DetallesProductos.Controls.Add(this.label5);
             this.DetallesProductos.Controls.Add(this.label4);
             this.DetallesProductos.Controls.Add(this.label3);
@@ -156,41 +161,41 @@ namespace AmayaPrincipal
             this.DetallesProductos.TabStop = false;
             this.DetallesProductos.Text = "Datos de Producto";
             // 
-            // textBox5
+            // textDescripcion
             // 
-            this.textBox5.Location = new System.Drawing.Point(132, 212);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(328, 104);
-            this.textBox5.TabIndex = 9;
+            this.textDescripcion.Location = new System.Drawing.Point(132, 212);
+            this.textDescripcion.Multiline = true;
+            this.textDescripcion.Name = "textDescripcion";
+            this.textDescripcion.Size = new System.Drawing.Size(328, 104);
+            this.textDescripcion.TabIndex = 9;
             // 
-            // textBox4
+            // textCantidad
             // 
-            this.textBox4.Location = new System.Drawing.Point(132, 157);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(85, 29);
-            this.textBox4.TabIndex = 8;
+            this.textCantidad.Location = new System.Drawing.Point(132, 157);
+            this.textCantidad.Name = "textCantidad";
+            this.textCantidad.Size = new System.Drawing.Size(85, 29);
+            this.textCantidad.TabIndex = 8;
             // 
-            // textBox3
+            // textNombre
             // 
-            this.textBox3.Location = new System.Drawing.Point(132, 106);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(159, 29);
-            this.textBox3.TabIndex = 7;
+            this.textNombre.Location = new System.Drawing.Point(132, 106);
+            this.textNombre.Name = "textNombre";
+            this.textNombre.Size = new System.Drawing.Size(159, 29);
+            this.textNombre.TabIndex = 7;
             // 
-            // textBox2
+            // textPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(375, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(85, 29);
-            this.textBox2.TabIndex = 6;
+            this.textPrecio.Location = new System.Drawing.Point(375, 53);
+            this.textPrecio.Name = "textPrecio";
+            this.textPrecio.Size = new System.Drawing.Size(85, 29);
+            this.textPrecio.TabIndex = 6;
             // 
-            // textBox1
+            // textCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 53);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(85, 29);
-            this.textBox1.TabIndex = 5;
+            this.textCodigo.Location = new System.Drawing.Point(132, 53);
+            this.textCodigo.Name = "textCodigo";
+            this.textCodigo.Size = new System.Drawing.Size(85, 29);
+            this.textCodigo.TabIndex = 5;
             // 
             // label5
             // 
@@ -253,7 +258,7 @@ namespace AmayaPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(579, 596);
+            this.ClientSize = new System.Drawing.Size(613, 596);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DetallesProductos);
             this.Controls.Add(this.panel1);
@@ -264,8 +269,9 @@ namespace AmayaPrincipal
             this.Name = "Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Productos";
+            this.Load += new System.EventHandler(this.Productos_Load_1);
             this.grupProducDisponible.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridLista)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.DetallesProductos.ResumeLayout(false);
@@ -280,7 +286,7 @@ namespace AmayaPrincipal
 
         private System.Windows.Forms.Label lablProductos;
         private System.Windows.Forms.GroupBox grupProducDisponible;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridLista;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
@@ -291,11 +297,11 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textDescripcion;
+        private System.Windows.Forms.TextBox textCantidad;
+        private System.Windows.Forms.TextBox textNombre;
+        private System.Windows.Forms.TextBox textPrecio;
+        private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;

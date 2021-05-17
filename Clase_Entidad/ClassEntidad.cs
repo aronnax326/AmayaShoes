@@ -51,7 +51,8 @@ namespace Capa_Entidad
         public String Nombre_Producto { get; set; }
         public int Cantidad { get; set; }
         public String Codigo { get; set; }
-
+        public String Descripcion { get; set; }
+        public int Precio { get; set; }
         public String Accion { get; set; }
     }
 

@@ -138,7 +138,10 @@ namespace Capa_Datos
             SqlCommand cmd = new SqlCommand("sp_Mantenimiento_Producto", cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Nombre", obje.Nombre_Producto);
+            cmd.Parameters.AddWithValue("@IdProducto", obje.Codigo);
+            cmd.Parameters.AddWithValue("@Descripción", obje.Descripcion);
             cmd.Parameters.AddWithValue("@Cantidad", obje.Cantidad);
+            cmd.Parameters.AddWithValue("@Precio", obje.Precio);
             cmd.Parameters.Add("@Accion", SqlDbType.VarChar, 50).Value = obje.Accion;
             cmd.Parameters["@Accion"].Direction = ParameterDirection.InputOutput;
             if (cn.State == ConnectionState.Open) cn.Close();
