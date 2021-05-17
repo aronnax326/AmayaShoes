@@ -49,6 +49,11 @@ namespace Capa_Negocio
         {
             return objd.D_Mantenimiento_Producto(obje);
         }
+        public DataTable N_listar_Productos()
+
+        {
+            return objd.D_Listar_Producto();
+        }
     }
 
     public class ClassNegocio_Pedido
@@ -72,5 +77,7 @@ namespace Capa_Negocio
         {
             return objdet.D_Mantenimiento_Detalle(obje);
         }
+
     }
 }
+

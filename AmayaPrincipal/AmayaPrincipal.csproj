@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassDatos.cs" />
     <Compile Include="Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>

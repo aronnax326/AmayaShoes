@@ -84,17 +84,7 @@ namespace Capa_Datos
             da.Fill(dt);
             return dt;
         }
-        public DataTable D_Listar_Producto()
-        {
-            SqlCommand cmd = new SqlCommand("sp_listar_Productos", cn);
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
 
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-
-            return dt;
-        }
         public string D_Mantenimiento_Producto(ClassEntidad_Producto obje)
         {
             string accion = "";
@@ -111,7 +101,6 @@ namespace Capa_Datos
             cn.Close();
             return accion;
         }
-
     }
 
     public class ClassDatos_Pedido
@@ -173,4 +162,3 @@ namespace Capa_Datos
         }
     }
 }
-

@@ -55,11 +55,11 @@ namespace AmayaPrincipal
             this.labCantidad = new System.Windows.Forms.Label();
             this.btnPedir = new System.Windows.Forms.Button();
             this.labFecha = new System.Windows.Forms.Label();
-            this.labNomProducto = new System.Windows.Forms.Label();
+            this.C = new System.Windows.Forms.Label();
             this.textNomProducto = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.textFecha = new System.Windows.Forms.Label();
             this.Fecha = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListar)).BeginInit();
@@ -265,6 +265,7 @@ namespace AmayaPrincipal
             this.textCantidad.Name = "textCantidad";
             this.textCantidad.Size = new System.Drawing.Size(48, 20);
             this.textCantidad.TabIndex = 17;
+          
             // 
             // labCodigo
             // 
@@ -306,15 +307,15 @@ namespace AmayaPrincipal
             this.labFecha.TabIndex = 22;
             this.labFecha.Text = "Fecha:";
             // 
-            // labNomProducto
+            // C
             // 
-            this.labNomProducto.AutoSize = true;
-            this.labNomProducto.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labNomProducto.Location = new System.Drawing.Point(204, 356);
-            this.labNomProducto.Name = "labNomProducto";
-            this.labNomProducto.Size = new System.Drawing.Size(62, 17);
-            this.labNomProducto.TabIndex = 23;
-            this.labNomProducto.Text = "Nombre:";
+            this.C.AutoSize = true;
+            this.C.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.C.Location = new System.Drawing.Point(204, 356);
+            this.C.Name = "C";
+            this.C.Size = new System.Drawing.Size(62, 17);
+            this.C.TabIndex = 23;
+            this.C.Text = "Nombre:";
             // 
             // textNomProducto
             // 
@@ -340,18 +341,18 @@ namespace AmayaPrincipal
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // textFecha
-            // 
-            this.textFecha.AutoSize = true;
-            this.textFecha.Location = new System.Drawing.Point(115, 116);
-            this.textFecha.Name = "textFecha";
-            this.textFecha.Size = new System.Drawing.Size(35, 13);
-            this.textFecha.TabIndex = 27;
-            this.textFecha.Text = "label2";
-            // 
             // Fecha
             // 
             this.Fecha.Tick += new System.EventHandler(this.Fecha_Tick);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(105, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "label2";
             // 
             // Pedidos
             // 
@@ -359,10 +360,10 @@ namespace AmayaPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(579, 596);
-            this.Controls.Add(this.textFecha);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textNomProducto);
-            this.Controls.Add(this.labNomProducto);
+            this.Controls.Add(this.C);
             this.Controls.Add(this.labFecha);
             this.Controls.Add(this.btnPedir);
             this.Controls.Add(this.btnConfirmar);
@@ -425,12 +426,12 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label labCantidad;
         private System.Windows.Forms.Button btnPedir;
         private System.Windows.Forms.Label labFecha;
-        private System.Windows.Forms.Label labNomProducto;
+        private System.Windows.Forms.Label C;
         private System.Windows.Forms.TextBox textNomProducto;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dataGridViewListar;
         private System.Windows.Forms.DataGridView dataGridViewProd;
-        private System.Windows.Forms.Label textFecha;
         private System.Windows.Forms.Timer Fecha;
+        private System.Windows.Forms.Label label2;
     }
 }

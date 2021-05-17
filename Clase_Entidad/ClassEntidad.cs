@@ -59,4 +59,5 @@ namespace Capa_Entidad
         public String Guia { get; set; }
         public String Accion { get; set; }
     }
+
 }

@@ -119,5 +119,7 @@ namespace AmayaPrincipal
         {
             Fecha.Enabled = true;
         }
+
+     
     }
 }
