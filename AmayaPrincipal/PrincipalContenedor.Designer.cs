@@ -33,6 +33,7 @@ namespace AmayaPrincipal
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Imagen_Cerrar = new System.Windows.Forms.PictureBox();
             this.panelTema = new System.Windows.Forms.Panel();
             this.lblReproductor = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,11 +46,10 @@ namespace AmayaPrincipal
             this.btnHome = new System.Windows.Forms.Button();
             this.btnStop = new System.Windows.Forms.PictureBox();
             this.btnPlay = new System.Windows.Forms.PictureBox();
-            this.Imagen_Cerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +61,7 @@ namespace AmayaPrincipal
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(788, 22);
+            this.panel1.Size = new System.Drawing.Size(1076, 22);
             this.panel1.TabIndex = 0;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -72,7 +72,7 @@ namespace AmayaPrincipal
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(369, 3);
+            this.label1.Location = new System.Drawing.Point(512, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 15);
             this.label1.TabIndex = 23;
@@ -86,12 +86,22 @@ namespace AmayaPrincipal
             this.panel2.Size = new System.Drawing.Size(229, 534);
             this.panel2.TabIndex = 1;
             // 
+            // Imagen_Cerrar
+            // 
+            this.Imagen_Cerrar.Image = global::AmayaPrincipal.Properties.Resources.cerrar;
+            this.Imagen_Cerrar.Location = new System.Drawing.Point(1059, 5);
+            this.Imagen_Cerrar.Name = "Imagen_Cerrar";
+            this.Imagen_Cerrar.Size = new System.Drawing.Size(14, 14);
+            this.Imagen_Cerrar.TabIndex = 0;
+            this.Imagen_Cerrar.TabStop = false;
+            this.Imagen_Cerrar.Click += new System.EventHandler(this.Imagen_Cerrar_Click);
+            // 
             // panelTema
             // 
             this.panelTema.BackColor = System.Drawing.Color.White;
             this.panelTema.Location = new System.Drawing.Point(208, 23);
             this.panelTema.Name = "panelTema";
-            this.panelTema.Size = new System.Drawing.Size(579, 596);
+            this.panelTema.Size = new System.Drawing.Size(868, 633);
             this.panelTema.TabIndex = 3;
             // 
             // lblReproductor
@@ -273,23 +283,13 @@ namespace AmayaPrincipal
             this.btnPlay.TabStop = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
-            // Imagen_Cerrar
-            // 
-            this.Imagen_Cerrar.Image = global::AmayaPrincipal.Properties.Resources.cerrar;
-            this.Imagen_Cerrar.Location = new System.Drawing.Point(763, 4);
-            this.Imagen_Cerrar.Name = "Imagen_Cerrar";
-            this.Imagen_Cerrar.Size = new System.Drawing.Size(14, 14);
-            this.Imagen_Cerrar.TabIndex = 0;
-            this.Imagen_Cerrar.TabStop = false;
-            this.Imagen_Cerrar.Click += new System.EventHandler(this.Imagen_Cerrar_Click);
-            // 
             // PrincipalContenedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(788, 617);
+            this.ClientSize = new System.Drawing.Size(1076, 655);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnInventario);
             this.Controls.Add(this.label2);
@@ -310,9 +310,9 @@ namespace AmayaPrincipal
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnStop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPlay)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Imagen_Cerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

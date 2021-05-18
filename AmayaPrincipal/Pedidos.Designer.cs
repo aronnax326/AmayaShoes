@@ -76,7 +76,7 @@ namespace AmayaPrincipal
             this.lblCarrito1.AutoSize = true;
             this.lblCarrito1.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCarrito1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblCarrito1.Location = new System.Drawing.Point(243, 63);
+            this.lblCarrito1.Location = new System.Drawing.Point(393, 60);
             this.lblCarrito1.Name = "lblCarrito1";
             this.lblCarrito1.Size = new System.Drawing.Size(91, 30);
             this.lblCarrito1.TabIndex = 0;
@@ -86,7 +86,7 @@ namespace AmayaPrincipal
             // 
             this.lblCarrito2.AutoSize = true;
             this.lblCarrito2.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCarrito2.Location = new System.Drawing.Point(256, 251);
+            this.lblCarrito2.Location = new System.Drawing.Point(421, 246);
             this.lblCarrito2.Name = "lblCarrito2";
             this.lblCarrito2.Size = new System.Drawing.Size(167, 21);
             this.lblCarrito2.TabIndex = 1;
@@ -100,7 +100,7 @@ namespace AmayaPrincipal
             this.groupBox1.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(25, 538);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(515, 142);
+            this.groupBox1.Size = new System.Drawing.Size(814, 185);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
@@ -113,7 +113,7 @@ namespace AmayaPrincipal
             this.dataGridViewProd.Location = new System.Drawing.Point(23, 30);
             this.dataGridViewProd.Name = "dataGridViewProd";
             this.dataGridViewProd.ReadOnly = true;
-            this.dataGridViewProd.Size = new System.Drawing.Size(484, 98);
+            this.dataGridViewProd.Size = new System.Drawing.Size(764, 98);
             this.dataGridViewProd.TabIndex = 2;
             this.dataGridViewProd.Visible = false;
             // 
@@ -122,10 +122,10 @@ namespace AmayaPrincipal
             this.dataGridViewListar.AllowUserToAddRows = false;
             this.dataGridViewListar.AllowUserToDeleteRows = false;
             this.dataGridViewListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewListar.Location = new System.Drawing.Point(15, 22);
+            this.dataGridViewListar.Location = new System.Drawing.Point(48, 22);
             this.dataGridViewListar.Name = "dataGridViewListar";
             this.dataGridViewListar.ReadOnly = true;
-            this.dataGridViewListar.Size = new System.Drawing.Size(492, 98);
+            this.dataGridViewListar.Size = new System.Drawing.Size(739, 149);
             this.dataGridViewListar.TabIndex = 1;
             this.dataGridViewListar.Visible = false;
             // 
@@ -134,16 +134,16 @@ namespace AmayaPrincipal
             this.dataGridViewPedido.AllowUserToAddRows = false;
             this.dataGridViewPedido.AllowUserToDeleteRows = false;
             this.dataGridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedido.Location = new System.Drawing.Point(15, 38);
+            this.dataGridViewPedido.Location = new System.Drawing.Point(15, 30);
             this.dataGridViewPedido.Name = "dataGridViewPedido";
             this.dataGridViewPedido.ReadOnly = true;
-            this.dataGridViewPedido.Size = new System.Drawing.Size(465, 98);
+            this.dataGridViewPedido.Size = new System.Drawing.Size(793, 141);
             this.dataGridViewPedido.TabIndex = 0;
             // 
             // textNumPedido
             // 
             this.textNumPedido.Enabled = false;
-            this.textNumPedido.Location = new System.Drawing.Point(443, 251);
+            this.textNumPedido.Location = new System.Drawing.Point(641, 248);
             this.textNumPedido.Name = "textNumPedido";
             this.textNumPedido.ReadOnly = true;
             this.textNumPedido.Size = new System.Drawing.Size(46, 20);
@@ -156,7 +156,7 @@ namespace AmayaPrincipal
             this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfirmar.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmar.Location = new System.Drawing.Point(222, 696);
+            this.btnConfirmar.Location = new System.Drawing.Point(383, 743);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(122, 40);
             this.btnConfirmar.TabIndex = 5;
@@ -166,7 +166,7 @@ namespace AmayaPrincipal
             // 
             // textIdentificacion
             // 
-            this.textIdentificacion.Location = new System.Drawing.Point(176, 305);
+            this.textIdentificacion.Location = new System.Drawing.Point(237, 299);
             this.textIdentificacion.Name = "textIdentificacion";
             this.textIdentificacion.Size = new System.Drawing.Size(100, 20);
             this.textIdentificacion.TabIndex = 6;
@@ -174,7 +174,7 @@ namespace AmayaPrincipal
             // textApellido
             // 
             this.textApellido.Enabled = false;
-            this.textApellido.Location = new System.Drawing.Point(415, 339);
+            this.textApellido.Location = new System.Drawing.Point(531, 333);
             this.textApellido.Name = "textApellido";
             this.textApellido.ReadOnly = true;
             this.textApellido.Size = new System.Drawing.Size(100, 20);
@@ -183,7 +183,7 @@ namespace AmayaPrincipal
             // textNombre
             // 
             this.textNombre.Enabled = false;
-            this.textNombre.Location = new System.Drawing.Point(176, 345);
+            this.textNombre.Location = new System.Drawing.Point(237, 339);
             this.textNombre.Name = "textNombre";
             this.textNombre.ReadOnly = true;
             this.textNombre.Size = new System.Drawing.Size(100, 20);
@@ -192,7 +192,7 @@ namespace AmayaPrincipal
             // textTelefono
             // 
             this.textTelefono.Enabled = false;
-            this.textTelefono.Location = new System.Drawing.Point(415, 382);
+            this.textTelefono.Location = new System.Drawing.Point(531, 376);
             this.textTelefono.Name = "textTelefono";
             this.textTelefono.ReadOnly = true;
             this.textTelefono.Size = new System.Drawing.Size(100, 20);
@@ -202,7 +202,7 @@ namespace AmayaPrincipal
             // 
             this.labIdentificacion.AutoSize = true;
             this.labIdentificacion.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labIdentificacion.Location = new System.Drawing.Point(57, 305);
+            this.labIdentificacion.Location = new System.Drawing.Point(118, 299);
             this.labIdentificacion.Name = "labIdentificacion";
             this.labIdentificacion.Size = new System.Drawing.Size(96, 17);
             this.labIdentificacion.TabIndex = 10;
@@ -212,7 +212,7 @@ namespace AmayaPrincipal
             // 
             this.labNombre.AutoSize = true;
             this.labNombre.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labNombre.Location = new System.Drawing.Point(57, 345);
+            this.labNombre.Location = new System.Drawing.Point(118, 339);
             this.labNombre.Name = "labNombre";
             this.labNombre.Size = new System.Drawing.Size(62, 17);
             this.labNombre.TabIndex = 11;
@@ -222,7 +222,7 @@ namespace AmayaPrincipal
             // 
             this.labApellido.AutoSize = true;
             this.labApellido.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labApellido.Location = new System.Drawing.Point(306, 345);
+            this.labApellido.Location = new System.Drawing.Point(422, 339);
             this.labApellido.Name = "labApellido";
             this.labApellido.Size = new System.Drawing.Size(64, 17);
             this.labApellido.TabIndex = 12;
@@ -232,7 +232,7 @@ namespace AmayaPrincipal
             // 
             this.labDireccion.AutoSize = true;
             this.labDireccion.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labDireccion.Location = new System.Drawing.Point(57, 385);
+            this.labDireccion.Location = new System.Drawing.Point(118, 379);
             this.labDireccion.Name = "labDireccion";
             this.labDireccion.Size = new System.Drawing.Size(70, 17);
             this.labDireccion.TabIndex = 13;
@@ -242,7 +242,7 @@ namespace AmayaPrincipal
             // 
             this.labTelefono.AutoSize = true;
             this.labTelefono.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labTelefono.Location = new System.Drawing.Point(306, 385);
+            this.labTelefono.Location = new System.Drawing.Point(422, 379);
             this.labTelefono.Name = "labTelefono";
             this.labTelefono.Size = new System.Drawing.Size(67, 17);
             this.labTelefono.TabIndex = 14;
@@ -251,7 +251,7 @@ namespace AmayaPrincipal
             // textDireccion
             // 
             this.textDireccion.Enabled = false;
-            this.textDireccion.Location = new System.Drawing.Point(176, 385);
+            this.textDireccion.Location = new System.Drawing.Point(237, 379);
             this.textDireccion.Name = "textDireccion";
             this.textDireccion.ReadOnly = true;
             this.textDireccion.Size = new System.Drawing.Size(100, 20);
@@ -259,7 +259,7 @@ namespace AmayaPrincipal
             // 
             // textCodigo
             // 
-            this.textCodigo.Location = new System.Drawing.Point(153, 443);
+            this.textCodigo.Location = new System.Drawing.Point(214, 437);
             this.textCodigo.Name = "textCodigo";
             this.textCodigo.Size = new System.Drawing.Size(48, 20);
             this.textCodigo.TabIndex = 16;
@@ -267,7 +267,7 @@ namespace AmayaPrincipal
             // 
             // textCantidad
             // 
-            this.textCantidad.Location = new System.Drawing.Point(153, 475);
+            this.textCantidad.Location = new System.Drawing.Point(214, 469);
             this.textCantidad.Name = "textCantidad";
             this.textCantidad.Size = new System.Drawing.Size(48, 20);
             this.textCantidad.TabIndex = 17;
@@ -276,7 +276,7 @@ namespace AmayaPrincipal
             // 
             this.labCodigo.AutoSize = true;
             this.labCodigo.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labCodigo.Location = new System.Drawing.Point(57, 443);
+            this.labCodigo.Location = new System.Drawing.Point(118, 437);
             this.labCodigo.Name = "labCodigo";
             this.labCodigo.Size = new System.Drawing.Size(56, 17);
             this.labCodigo.TabIndex = 19;
@@ -286,7 +286,7 @@ namespace AmayaPrincipal
             // 
             this.labCantidad.AutoSize = true;
             this.labCantidad.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labCantidad.Location = new System.Drawing.Point(57, 475);
+            this.labCantidad.Location = new System.Drawing.Point(118, 469);
             this.labCantidad.Name = "labCantidad";
             this.labCantidad.Size = new System.Drawing.Size(67, 17);
             this.labCantidad.TabIndex = 20;
@@ -295,7 +295,7 @@ namespace AmayaPrincipal
             // btnPedir
             // 
             this.btnPedir.Image = global::AmayaPrincipal.Properties.Resources.shopping_cart;
-            this.btnPedir.Location = new System.Drawing.Point(431, 450);
+            this.btnPedir.Location = new System.Drawing.Point(531, 479);
             this.btnPedir.Name = "btnPedir";
             this.btnPedir.Size = new System.Drawing.Size(75, 53);
             this.btnPedir.TabIndex = 21;
@@ -306,7 +306,7 @@ namespace AmayaPrincipal
             // 
             this.labFecha.AutoSize = true;
             this.labFecha.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labFecha.Location = new System.Drawing.Point(61, 257);
+            this.labFecha.Location = new System.Drawing.Point(122, 251);
             this.labFecha.Name = "labFecha";
             this.labFecha.Size = new System.Drawing.Size(47, 17);
             this.labFecha.TabIndex = 22;
@@ -316,7 +316,7 @@ namespace AmayaPrincipal
             // 
             this.labNomProducto.AutoSize = true;
             this.labNomProducto.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labNomProducto.Location = new System.Drawing.Point(219, 478);
+            this.labNomProducto.Location = new System.Drawing.Point(422, 437);
             this.labNomProducto.Name = "labNomProducto";
             this.labNomProducto.Size = new System.Drawing.Size(62, 17);
             this.labNomProducto.TabIndex = 23;
@@ -325,7 +325,7 @@ namespace AmayaPrincipal
             // textNomProducto
             // 
             this.textNomProducto.Enabled = false;
-            this.textNomProducto.Location = new System.Drawing.Point(297, 474);
+            this.textNomProducto.Location = new System.Drawing.Point(531, 434);
             this.textNomProducto.Name = "textNomProducto";
             this.textNomProducto.ReadOnly = true;
             this.textNomProducto.Size = new System.Drawing.Size(100, 20);
@@ -338,7 +338,7 @@ namespace AmayaPrincipal
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Ebrima", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(317, 305);
+            this.btnBuscar.Location = new System.Drawing.Point(531, 293);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 26;
@@ -349,7 +349,7 @@ namespace AmayaPrincipal
             // textFecha
             // 
             this.textFecha.AutoSize = true;
-            this.textFecha.Location = new System.Drawing.Point(125, 260);
+            this.textFecha.Location = new System.Drawing.Point(186, 254);
             this.textFecha.Name = "textFecha";
             this.textFecha.Size = new System.Drawing.Size(35, 13);
             this.textFecha.TabIndex = 27;
@@ -365,7 +365,7 @@ namespace AmayaPrincipal
             this.nuevoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(562, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(851, 29);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -382,13 +382,13 @@ namespace AmayaPrincipal
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Location = new System.Drawing.Point(1, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(561, 20);
+            this.panel1.Size = new System.Drawing.Size(850, 20);
             this.panel1.TabIndex = 29;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AmayaPrincipal.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(222, 107);
+            this.pictureBox1.Location = new System.Drawing.Point(372, 104);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 117);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -401,7 +401,7 @@ namespace AmayaPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(579, 596);
+            this.ClientSize = new System.Drawing.Size(868, 633);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textFecha);

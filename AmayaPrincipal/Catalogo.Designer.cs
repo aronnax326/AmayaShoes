@@ -41,7 +41,6 @@ namespace AmayaPrincipal
             this.lblp004 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.linkTenisNewBalance = new System.Windows.Forms.LinkLabel();
             this.lblTenisNewBalance = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTenisAdidas = new System.Windows.Forms.Label();
@@ -83,7 +82,7 @@ namespace AmayaPrincipal
             // picProducto1
             // 
             this.picProducto1.Image = global::AmayaPrincipal.Properties.Resources.tenis;
-            this.picProducto1.Location = new System.Drawing.Point(61, 291);
+            this.picProducto1.Location = new System.Drawing.Point(189, 284);
             this.picProducto1.Name = "picProducto1";
             this.picProducto1.Size = new System.Drawing.Size(155, 125);
             this.picProducto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -102,7 +101,7 @@ namespace AmayaPrincipal
             // picProducto2
             // 
             this.picProducto2.Image = global::AmayaPrincipal.Properties.Resources.tenis1;
-            this.picProducto2.Location = new System.Drawing.Point(35, 1293);
+            this.picProducto2.Location = new System.Drawing.Point(155, 1288);
             this.picProducto2.Name = "picProducto2";
             this.picProducto2.Size = new System.Drawing.Size(182, 125);
             this.picProducto2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +111,7 @@ namespace AmayaPrincipal
             // picProducto3
             // 
             this.picProducto3.Image = global::AmayaPrincipal.Properties.Resources.tenis3;
-            this.picProducto3.Location = new System.Drawing.Point(35, 533);
+            this.picProducto3.Location = new System.Drawing.Point(162, 526);
             this.picProducto3.Name = "picProducto3";
             this.picProducto3.Size = new System.Drawing.Size(182, 144);
             this.picProducto3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +121,7 @@ namespace AmayaPrincipal
             // picProducto4
             // 
             this.picProducto4.Image = global::AmayaPrincipal.Properties.Resources.tenis41;
-            this.picProducto4.Location = new System.Drawing.Point(35, 772);
+            this.picProducto4.Location = new System.Drawing.Point(162, 765);
             this.picProducto4.Name = "picProducto4";
             this.picProducto4.Size = new System.Drawing.Size(182, 144);
             this.picProducto4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -133,7 +132,7 @@ namespace AmayaPrincipal
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(278, 432);
+            this.label1.Location = new System.Drawing.Point(451, 425);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 32);
             this.label1.TabIndex = 43;
@@ -143,7 +142,7 @@ namespace AmayaPrincipal
             // 
             this.lblp002.AutoSize = true;
             this.lblp002.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp002.Location = new System.Drawing.Point(104, 1479);
+            this.lblp002.Location = new System.Drawing.Point(224, 1474);
             this.lblp002.Name = "lblp002";
             this.lblp002.Size = new System.Drawing.Size(37, 17);
             this.lblp002.TabIndex = 11;
@@ -153,7 +152,7 @@ namespace AmayaPrincipal
             // 
             this.lblp003.AutoSize = true;
             this.lblp003.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp003.Location = new System.Drawing.Point(104, 726);
+            this.lblp003.Location = new System.Drawing.Point(231, 719);
             this.lblp003.Name = "lblp003";
             this.lblp003.Size = new System.Drawing.Size(37, 17);
             this.lblp003.TabIndex = 12;
@@ -163,7 +162,7 @@ namespace AmayaPrincipal
             // 
             this.lblp005.AutoSize = true;
             this.lblp005.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp005.Location = new System.Drawing.Point(104, 971);
+            this.lblp005.Location = new System.Drawing.Point(231, 964);
             this.lblp005.Name = "lblp005";
             this.lblp005.Size = new System.Drawing.Size(37, 17);
             this.lblp005.TabIndex = 13;
@@ -173,7 +172,7 @@ namespace AmayaPrincipal
             // 
             this.lblp004.AutoSize = true;
             this.lblp004.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblp004.Location = new System.Drawing.Point(104, 1742);
+            this.lblp004.Location = new System.Drawing.Point(224, 1737);
             this.lblp004.Name = "lblp004";
             this.lblp004.Size = new System.Drawing.Size(37, 17);
             this.lblp004.TabIndex = 16;
@@ -182,7 +181,7 @@ namespace AmayaPrincipal
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AmayaPrincipal.Properties.Resources.tenis5;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 1569);
+            this.pictureBox1.Location = new System.Drawing.Point(155, 1564);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(182, 125);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,27 +191,18 @@ namespace AmayaPrincipal
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AmayaPrincipal.Properties.Resources.tenis9;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 1012);
+            this.pictureBox2.Location = new System.Drawing.Point(162, 1005);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(182, 144);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
-            // linkTenisNewBalance
-            // 
-            this.linkTenisNewBalance.AutoSize = true;
-            this.linkTenisNewBalance.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkTenisNewBalance.Location = new System.Drawing.Point(51, 1220);
-            this.linkTenisNewBalance.Name = "linkTenisNewBalance";
-            this.linkTenisNewBalance.Size = new System.Drawing.Size(0, 21);
-            this.linkTenisNewBalance.TabIndex = 19;
-            // 
             // lblTenisNewBalance
             // 
             this.lblTenisNewBalance.AutoSize = true;
             this.lblTenisNewBalance.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenisNewBalance.Location = new System.Drawing.Point(104, 1220);
+            this.lblTenisNewBalance.Location = new System.Drawing.Point(224, 1215);
             this.lblTenisNewBalance.Name = "lblTenisNewBalance";
             this.lblTenisNewBalance.Size = new System.Drawing.Size(37, 17);
             this.lblTenisNewBalance.TabIndex = 20;
@@ -222,7 +212,7 @@ namespace AmayaPrincipal
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(278, 699);
+            this.label2.Location = new System.Drawing.Point(451, 692);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(246, 32);
             this.label2.TabIndex = 44;
@@ -232,7 +222,7 @@ namespace AmayaPrincipal
             // 
             this.txtTenisAdidas.AutoSize = true;
             this.txtTenisAdidas.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenisAdidas.Location = new System.Drawing.Point(88, 429);
+            this.txtTenisAdidas.Location = new System.Drawing.Point(216, 422);
             this.txtTenisAdidas.Name = "txtTenisAdidas";
             this.txtTenisAdidas.Size = new System.Drawing.Size(87, 17);
             this.txtTenisAdidas.TabIndex = 22;
@@ -242,7 +232,7 @@ namespace AmayaPrincipal
             // 
             this.txtTenisNike.AutoSize = true;
             this.txtTenisNike.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenisNike.Location = new System.Drawing.Point(86, 699);
+            this.txtTenisNike.Location = new System.Drawing.Point(213, 692);
             this.txtTenisNike.Name = "txtTenisNike";
             this.txtTenisNike.Size = new System.Drawing.Size(73, 17);
             this.txtTenisNike.TabIndex = 23;
@@ -252,7 +242,7 @@ namespace AmayaPrincipal
             // 
             this.txtTenisPuma.AutoSize = true;
             this.txtTenisPuma.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenisPuma.Location = new System.Drawing.Point(86, 942);
+            this.txtTenisPuma.Location = new System.Drawing.Point(213, 935);
             this.txtTenisPuma.Name = "txtTenisPuma";
             this.txtTenisPuma.Size = new System.Drawing.Size(80, 17);
             this.txtTenisPuma.TabIndex = 24;
@@ -262,7 +252,7 @@ namespace AmayaPrincipal
             // 
             this.txtTenisNewBalance.AutoSize = true;
             this.txtTenisNewBalance.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenisNewBalance.Location = new System.Drawing.Point(69, 1182);
+            this.txtTenisNewBalance.Location = new System.Drawing.Point(189, 1177);
             this.txtTenisNewBalance.Name = "txtTenisNewBalance";
             this.txtTenisNewBalance.Size = new System.Drawing.Size(123, 17);
             this.txtTenisNewBalance.TabIndex = 25;
@@ -272,7 +262,7 @@ namespace AmayaPrincipal
             // 
             this.txtBotinMaicolJ.AutoSize = true;
             this.txtBotinMaicolJ.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBotinMaicolJ.Location = new System.Drawing.Point(82, 1439);
+            this.txtBotinMaicolJ.Location = new System.Drawing.Point(202, 1434);
             this.txtBotinMaicolJ.Name = "txtBotinMaicolJ";
             this.txtBotinMaicolJ.Size = new System.Drawing.Size(87, 17);
             this.txtBotinMaicolJ.TabIndex = 26;
@@ -282,7 +272,7 @@ namespace AmayaPrincipal
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(278, 942);
+            this.label3.Location = new System.Drawing.Point(451, 935);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(246, 32);
             this.label3.TabIndex = 45;
@@ -293,7 +283,7 @@ namespace AmayaPrincipal
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(278, 1183);
+            this.label4.Location = new System.Drawing.Point(444, 1178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(246, 32);
             this.label4.TabIndex = 46;
@@ -303,7 +293,7 @@ namespace AmayaPrincipal
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(284, 1464);
+            this.label5.Location = new System.Drawing.Point(450, 1459);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(246, 32);
             this.label5.TabIndex = 47;
@@ -312,7 +302,7 @@ namespace AmayaPrincipal
             // pictureBox3
             // 
             this.pictureBox3.Image = global::AmayaPrincipal.Properties.Resources.Captura_de_pantalla__154_;
-            this.pictureBox3.Location = new System.Drawing.Point(281, 291);
+            this.pictureBox3.Location = new System.Drawing.Point(454, 284);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(205, 108);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -322,7 +312,7 @@ namespace AmayaPrincipal
             // pictureBox4
             // 
             this.pictureBox4.Image = global::AmayaPrincipal.Properties.Resources.Captura_de_pantalla__155_;
-            this.pictureBox4.Location = new System.Drawing.Point(281, 533);
+            this.pictureBox4.Location = new System.Drawing.Point(454, 526);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(204, 129);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -332,7 +322,7 @@ namespace AmayaPrincipal
             // pictureBox5
             // 
             this.pictureBox5.Image = global::AmayaPrincipal.Properties.Resources.WhatsApp_Image_2021_05_11_at_11_32_26_PM;
-            this.pictureBox5.Location = new System.Drawing.Point(281, 784);
+            this.pictureBox5.Location = new System.Drawing.Point(454, 777);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(187, 132);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -342,7 +332,7 @@ namespace AmayaPrincipal
             // pictureBox6
             // 
             this.pictureBox6.Image = global::AmayaPrincipal.Properties.Resources.Captura_de_pantalla__156_;
-            this.pictureBox6.Location = new System.Drawing.Point(269, 1012);
+            this.pictureBox6.Location = new System.Drawing.Point(442, 1005);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(265, 138);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -352,7 +342,7 @@ namespace AmayaPrincipal
             // pictureBox7
             // 
             this.pictureBox7.Image = global::AmayaPrincipal.Properties.Resources.Captura_de_pantalla__157_;
-            this.pictureBox7.Location = new System.Drawing.Point(287, 1569);
+            this.pictureBox7.Location = new System.Drawing.Point(453, 1564);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(236, 129);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -362,7 +352,7 @@ namespace AmayaPrincipal
             // pictureBox8
             // 
             this.pictureBox8.Image = global::AmayaPrincipal.Properties.Resources.Captura_de_pantalla__159_;
-            this.pictureBox8.Location = new System.Drawing.Point(269, 1293);
+            this.pictureBox8.Location = new System.Drawing.Point(435, 1288);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(272, 138);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -394,7 +384,6 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Controls.Add(this.txtTenisAdidas);
             this.pnlCatalogo.Controls.Add(this.label2);
             this.pnlCatalogo.Controls.Add(this.lblTenisNewBalance);
-            this.pnlCatalogo.Controls.Add(this.linkTenisNewBalance);
             this.pnlCatalogo.Controls.Add(this.pictureBox2);
             this.pnlCatalogo.Controls.Add(this.pictureBox1);
             this.pnlCatalogo.Controls.Add(this.lblp004);
@@ -410,13 +399,13 @@ namespace AmayaPrincipal
             this.pnlCatalogo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCatalogo.Location = new System.Drawing.Point(0, 0);
             this.pnlCatalogo.Name = "pnlCatalogo";
-            this.pnlCatalogo.Size = new System.Drawing.Size(579, 596);
+            this.pnlCatalogo.Size = new System.Drawing.Size(868, 633);
             this.pnlCatalogo.TabIndex = 7;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::AmayaPrincipal.Properties.Resources._1;
-            this.pictureBox9.Location = new System.Drawing.Point(204, 123);
+            this.pictureBox9.Location = new System.Drawing.Point(377, 116);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(133, 117);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -428,14 +417,14 @@ namespace AmayaPrincipal
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(562, 23);
+            this.panel1.Size = new System.Drawing.Size(856, 23);
             this.panel1.TabIndex = 51;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Ebrima", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(217, 60);
+            this.label8.Location = new System.Drawing.Point(390, 53);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(106, 30);
             this.label8.TabIndex = 50;
@@ -445,7 +434,7 @@ namespace AmayaPrincipal
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Ebrima", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(104, 477);
+            this.label7.Location = new System.Drawing.Point(232, 470);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(37, 17);
             this.label7.TabIndex = 49;
@@ -455,7 +444,7 @@ namespace AmayaPrincipal
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(277, 1737);
+            this.label6.Location = new System.Drawing.Point(443, 1732);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(246, 32);
             this.label6.TabIndex = 48;
@@ -467,7 +456,7 @@ namespace AmayaPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(579, 596);
+            this.ClientSize = new System.Drawing.Size(868, 633);
             this.Controls.Add(this.pnlCatalogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Catalogo";
@@ -506,7 +495,6 @@ namespace AmayaPrincipal
         private System.Windows.Forms.Label lblp004;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.LinkLabel linkTenisNewBalance;
         private System.Windows.Forms.Label lblTenisNewBalance;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label txtTenisAdidas;

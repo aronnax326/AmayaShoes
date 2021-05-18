@@ -61,7 +61,7 @@ namespace AmayaPrincipal
             // 
             this.lablProductos.AutoSize = true;
             this.lablProductos.Font = new System.Drawing.Font("Ebrima", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lablProductos.Location = new System.Drawing.Point(212, 66);
+            this.lablProductos.Location = new System.Drawing.Point(375, 70);
             this.lablProductos.Name = "lablProductos";
             this.lablProductos.Size = new System.Drawing.Size(113, 30);
             this.lablProductos.TabIndex = 0;
@@ -71,9 +71,9 @@ namespace AmayaPrincipal
             // 
             this.grupProducDisponible.Controls.Add(this.dataGridLista);
             this.grupProducDisponible.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grupProducDisponible.Location = new System.Drawing.Point(12, 614);
+            this.grupProducDisponible.Location = new System.Drawing.Point(12, 618);
             this.grupProducDisponible.Name = "grupProducDisponible";
-            this.grupProducDisponible.Size = new System.Drawing.Size(523, 252);
+            this.grupProducDisponible.Size = new System.Drawing.Size(798, 252);
             this.grupProducDisponible.TabIndex = 1;
             this.grupProducDisponible.TabStop = false;
             this.grupProducDisponible.Text = "Productos Disponibles";
@@ -86,7 +86,7 @@ namespace AmayaPrincipal
             this.dataGridLista.Location = new System.Drawing.Point(21, 54);
             this.dataGridLista.Name = "dataGridLista";
             this.dataGridLista.ReadOnly = true;
-            this.dataGridLista.Size = new System.Drawing.Size(484, 185);
+            this.dataGridLista.Size = new System.Drawing.Size(752, 185);
             this.dataGridLista.TabIndex = 0;
             this.dataGridLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridLista_CellContentClick_1);
             // 
@@ -100,7 +100,7 @@ namespace AmayaPrincipal
             this.eliminarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(596, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(859, 29);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,7 +141,7 @@ namespace AmayaPrincipal
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Location = new System.Drawing.Point(0, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(562, 20);
+            this.panel1.Size = new System.Drawing.Size(859, 20);
             this.panel1.TabIndex = 4;
             // 
             // DetallesProductos
@@ -157,9 +157,9 @@ namespace AmayaPrincipal
             this.DetallesProductos.Controls.Add(this.label2);
             this.DetallesProductos.Controls.Add(this.label1);
             this.DetallesProductos.Font = new System.Drawing.Font("Ebrima", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DetallesProductos.Location = new System.Drawing.Point(12, 268);
+            this.DetallesProductos.Location = new System.Drawing.Point(12, 272);
             this.DetallesProductos.Name = "DetallesProductos";
-            this.DetallesProductos.Size = new System.Drawing.Size(520, 340);
+            this.DetallesProductos.Size = new System.Drawing.Size(798, 340);
             this.DetallesProductos.TabIndex = 5;
             this.DetallesProductos.TabStop = false;
             this.DetallesProductos.Text = "Datos de Producto";
@@ -169,7 +169,7 @@ namespace AmayaPrincipal
             this.textDescripcion.Location = new System.Drawing.Point(132, 212);
             this.textDescripcion.Multiline = true;
             this.textDescripcion.Name = "textDescripcion";
-            this.textDescripcion.Size = new System.Drawing.Size(328, 104);
+            this.textDescripcion.Size = new System.Drawing.Size(581, 104);
             this.textDescripcion.TabIndex = 9;
             // 
             // textCantidad
@@ -188,7 +188,7 @@ namespace AmayaPrincipal
             // 
             // textPrecio
             // 
-            this.textPrecio.Location = new System.Drawing.Point(375, 53);
+            this.textPrecio.Location = new System.Drawing.Point(566, 53);
             this.textPrecio.Name = "textPrecio";
             this.textPrecio.Size = new System.Drawing.Size(85, 29);
             this.textPrecio.TabIndex = 6;
@@ -203,7 +203,7 @@ namespace AmayaPrincipal
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(272, 56);
+            this.label5.Location = new System.Drawing.Point(463, 56);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 21);
             this.label5.TabIndex = 4;
@@ -248,9 +248,9 @@ namespace AmayaPrincipal
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AmayaPrincipal.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(204, 124);
+            this.pictureBox1.Location = new System.Drawing.Point(366, 122);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(136, 144);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -261,7 +261,7 @@ namespace AmayaPrincipal
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(613, 596);
+            this.ClientSize = new System.Drawing.Size(868, 633);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DetallesProductos);
             this.Controls.Add(this.panel1);
