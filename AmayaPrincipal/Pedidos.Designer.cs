@@ -107,27 +107,36 @@ namespace AmayaPrincipal
             // 
             // dataGridViewProd
             // 
+            this.dataGridViewProd.AllowUserToAddRows = false;
+            this.dataGridViewProd.AllowUserToDeleteRows = false;
             this.dataGridViewProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewProd.Location = new System.Drawing.Point(23, 30);
             this.dataGridViewProd.Name = "dataGridViewProd";
+            this.dataGridViewProd.ReadOnly = true;
             this.dataGridViewProd.Size = new System.Drawing.Size(484, 98);
             this.dataGridViewProd.TabIndex = 2;
             this.dataGridViewProd.Visible = false;
             // 
             // dataGridViewListar
             // 
+            this.dataGridViewListar.AllowUserToAddRows = false;
+            this.dataGridViewListar.AllowUserToDeleteRows = false;
             this.dataGridViewListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewListar.Location = new System.Drawing.Point(15, 22);
             this.dataGridViewListar.Name = "dataGridViewListar";
+            this.dataGridViewListar.ReadOnly = true;
             this.dataGridViewListar.Size = new System.Drawing.Size(492, 98);
             this.dataGridViewListar.TabIndex = 1;
             this.dataGridViewListar.Visible = false;
             // 
             // dataGridViewPedido
             // 
+            this.dataGridViewPedido.AllowUserToAddRows = false;
+            this.dataGridViewPedido.AllowUserToDeleteRows = false;
             this.dataGridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPedido.Location = new System.Drawing.Point(15, 38);
             this.dataGridViewPedido.Name = "dataGridViewPedido";
+            this.dataGridViewPedido.ReadOnly = true;
             this.dataGridViewPedido.Size = new System.Drawing.Size(465, 98);
             this.dataGridViewPedido.TabIndex = 0;
             // 

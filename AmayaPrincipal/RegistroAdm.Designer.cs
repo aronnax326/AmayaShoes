@@ -250,9 +250,12 @@ namespace AmayaPrincipal
             // 
             // dataGridListar
             // 
+            this.dataGridListar.AllowUserToAddRows = false;
+            this.dataGridListar.AllowUserToDeleteRows = false;
             this.dataGridListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridListar.Location = new System.Drawing.Point(6, 53);
             this.dataGridListar.Name = "dataGridListar";
+            this.dataGridListar.ReadOnly = true;
             this.dataGridListar.Size = new System.Drawing.Size(472, 163);
             this.dataGridListar.TabIndex = 23;
             this.dataGridListar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridListar_CellContentClick);

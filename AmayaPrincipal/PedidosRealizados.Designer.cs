@@ -176,9 +176,12 @@ namespace AmayaPrincipal
             // 
             // dataGridPedidos
             // 
+            this.dataGridPedidos.AllowUserToAddRows = false;
+            this.dataGridPedidos.AllowUserToDeleteRows = false;
             this.dataGridPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridPedidos.Location = new System.Drawing.Point(6, 39);
             this.dataGridPedidos.Name = "dataGridPedidos";
+            this.dataGridPedidos.ReadOnly = true;
             this.dataGridPedidos.Size = new System.Drawing.Size(507, 226);
             this.dataGridPedidos.TabIndex = 0;
             this.dataGridPedidos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPedidos_CellContentClick);

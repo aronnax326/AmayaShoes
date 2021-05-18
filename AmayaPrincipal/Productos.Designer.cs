@@ -80,9 +80,12 @@ namespace AmayaPrincipal
             // 
             // dataGridLista
             // 
+            this.dataGridLista.AllowUserToAddRows = false;
+            this.dataGridLista.AllowUserToDeleteRows = false;
             this.dataGridLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridLista.Location = new System.Drawing.Point(21, 54);
             this.dataGridLista.Name = "dataGridLista";
+            this.dataGridLista.ReadOnly = true;
             this.dataGridLista.Size = new System.Drawing.Size(484, 185);
             this.dataGridLista.TabIndex = 0;
             this.dataGridLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridLista_CellContentClick_1);
