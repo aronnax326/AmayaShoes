@@ -26,17 +26,22 @@ namespace AmayaPrincipal
         //Metodo  
         void Mantenimiento_Productos(string accion)
         {
+            try
+            {
+                objent.Codigo = textCodigo.Text;
+                objent.Nombre_Producto = textNombre.Text;
+                objent.Descripcion = textDescripcion.Text;
+                objent.Precio = Convert.ToInt32(textPrecio.Text);
+                objent.Cantidad = Convert.ToInt32(textCantidad.Text);
+                objent.Accion = accion;
+                string men = objneg.N_Mantenimiento_Producto(objent);
 
-            objent.Codigo = textCodigo.Text;
-            objent.Nombre_Producto = textNombre.Text;
-            objent.Descripcion = textDescripcion.Text;
-            MessageBox.Show(objent.Descripcion);
-            objent.Precio = Convert.ToInt32 (textPrecio.Text);
-            objent.Cantidad = Convert.ToInt32 ( textCantidad.Text);
-            objent.Accion = accion;
-            string men = objneg.N_Mantenimiento_Producto(objent);
-
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Verifique los datos y trate de nuevo.");
+            }
 
         }
         void limpiar()

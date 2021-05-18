@@ -38,15 +38,22 @@ namespace AmayaPrincipal
 
         void mantenimiento(string accion)
         {
-            objent.Numero_Pedido = Convert.ToInt32(txtPedido.Text);
-            objent.Cantidad = Convert.ToInt32(txtCantidad.Text);
-            objent.Nombre_Producto = txtNomProducto.Text;
-            objent.Codigo = txtReferencia.Text;
-            objent.Identificacion = Convert.ToInt32(txtIdentificacion.Text);
-            objent.Fecha = DateTime.Now.Date;
-            objent.Accion = accion;
-            string men = objneg.N_Mantenimiento_Pedido(objent);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                objent.Numero_Pedido = Convert.ToInt32(txtPedido.Text);
+                objent.Cantidad = Convert.ToInt32(txtCantidad.Text);
+                objent.Nombre_Producto = txtNomProducto.Text;
+                objent.Codigo = txtReferencia.Text;
+                objent.Identificacion = Convert.ToInt32(txtIdentificacion.Text);
+                objent.Fecha = DateTime.Now.Date;
+                objent.Accion = accion;
+                string men = objneg.N_Mantenimiento_Pedido(objent);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Valide los datos y luego vuelva a intentar.");
+            }
         }
 
         void limpiar()

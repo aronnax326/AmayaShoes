@@ -32,15 +32,22 @@ namespace AmayaPrincipal
 
         void mantenimiento_pedido(string accion)
         {
-            objentped.Numero_Pedido = Convert.ToInt32(textNumPedido.Text);
-            objentped.Identificacion = Convert.ToInt32(textIdentificacion.Text);
-            objentped.Fecha = Convert.ToDateTime(textFecha.Text);
-            objentped.Nombre_Producto = textNomProducto.Text;
-            objentped.Cantidad = Convert.ToInt32(textCantidad.Text);
-            objentped.Codigo = textCodigo.Text;
-            objentped.Accion = accion;
-            string men = objnegped.N_Mantenimiento_Pedido(objentped);
-            MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                objentped.Numero_Pedido = Convert.ToInt32(textNumPedido.Text);
+                objentped.Identificacion = Convert.ToInt32(textIdentificacion.Text);
+                objentped.Fecha = Convert.ToDateTime(textFecha.Text);
+                objentped.Nombre_Producto = textNomProducto.Text;
+                objentped.Cantidad = Convert.ToInt32(textCantidad.Text);
+                objentped.Codigo = textCodigo.Text;
+                objentped.Accion = accion;
+                string men = objnegped.N_Mantenimiento_Pedido(objentped);
+                MessageBox.Show(men, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Valide los datos y vuelva a intentar.");
+            }
         }
 
         void mantenimiento_detalle(string accion)
@@ -94,12 +101,18 @@ namespace AmayaPrincipal
 
         private void btnPedir_Click(object sender, EventArgs e)
         {
-            
-            mantenimiento_pedido("1");
-            objentped.Numero_Pedido = Convert.ToInt32(textNumPedido.Text);
-            DataTable dt = new DataTable();
-            dt = objnegped.N_Buscar_Pedido(objentped);
-            dataGridViewPedido.DataSource = dt;
+            try
+            {
+                mantenimiento_pedido("1");
+                objentped.Numero_Pedido = Convert.ToInt32(textNumPedido.Text);
+                DataTable dt = new DataTable();
+                dt = objnegped.N_Buscar_Pedido(objentped);
+                dataGridViewPedido.DataSource = dt;
+            }
+            catch (Exception)
+            {
+                
+            }
 
         }
 
