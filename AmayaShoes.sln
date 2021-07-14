@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmayaPrincipal", "AmayaPrincipal\AmayaPrincipal.csproj", "{5DE6290E-624A-4FD0-B3CE-51039DFF4B8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amaya Shoes", "AmayaPrincipal\Amaya Shoes.csproj", "{5DE6290E-624A-4FD0-B3CE-51039DFF4B8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capa_Entidad", "Clase_Entidad\Capa_Entidad.csproj", "{F9AD8EC1-E17A-478A-AC66-DA9D7F832943}"
 EndProject
